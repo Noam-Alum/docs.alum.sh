@@ -1,6 +1,6 @@
 # Usage
 
-> **This section is reffering to the `/et/make_backup/make_backup.conf` file.**
+> **This section is reffering to the `/etc/make_backup/make_backup.conf` file.**
 
 ## count_location
 
