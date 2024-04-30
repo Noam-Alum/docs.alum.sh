@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>script breakdown | ALUM.SH - docs</title>
+    <meta name="generator" content="VuePress 1.9.10">
+    <link rel="shortcut icon" type="image/png" href="/images/logo.png">
+    <meta name="description" content="ALUM.SH Documents">
+    
+    <link rel="preload" href="/assets/css/0.styles.b66bb086.css" as="style"><link rel="preload" href="/assets/js/app.1bae7884.js" as="script"><link rel="preload" href="/assets/js/2.98e47f96.js" as="script"><link rel="preload" href="/assets/js/1.8765c949.js" as="script"><link rel="preload" href="/assets/js/25.8370c73b.js" as="script"><link rel="prefetch" href="/assets/js/10.4a550917.js"><link rel="prefetch" href="/assets/js/11.ce506006.js"><link rel="prefetch" href="/assets/js/12.a7821a2a.js"><link rel="prefetch" href="/assets/js/13.86472d4b.js"><link rel="prefetch" href="/assets/js/14.a0f57c0a.js"><link rel="prefetch" href="/assets/js/15.018f24a1.js"><link rel="prefetch" href="/assets/js/16.29387046.js"><link rel="prefetch" href="/assets/js/17.27f0523c.js"><link rel="prefetch" href="/assets/js/18.3256f17f.js"><link rel="prefetch" href="/assets/js/19.d8afd0ae.js"><link rel="prefetch" href="/assets/js/20.aac18eb8.js"><link rel="prefetch" href="/assets/js/21.238db0e9.js"><link rel="prefetch" href="/assets/js/22.6180816b.js"><link rel="prefetch" href="/assets/js/23.611b2bad.js"><link rel="prefetch" href="/assets/js/24.e5376647.js"><link rel="prefetch" href="/assets/js/26.55c0917b.js"><link rel="prefetch" href="/assets/js/27.95fc2037.js"><link rel="prefetch" href="/assets/js/28.326d02c9.js"><link rel="prefetch" href="/assets/js/29.fc8c7494.js"><link rel="prefetch" href="/assets/js/3.a710305d.js"><link rel="prefetch" href="/assets/js/30.bc508e1e.js"><link rel="prefetch" href="/assets/js/31.94ad721e.js"><link rel="prefetch" href="/assets/js/32.f3e4edbd.js"><link rel="prefetch" href="/assets/js/33.faae4009.js"><link rel="prefetch" href="/assets/js/34.da17cc1d.js"><link rel="prefetch" href="/assets/js/35.fd4a046c.js"><link rel="prefetch" href="/assets/js/36.f8156cd3.js"><link rel="prefetch" href="/assets/js/37.1b69fe9c.js"><link rel="prefetch" href="/assets/js/38.2391afcc.js"><link rel="prefetch" href="/assets/js/39.90038f87.js"><link rel="prefetch" href="/assets/js/4.267b1c1b.js"><link rel="prefetch" href="/assets/js/40.4f267c3a.js"><link rel="prefetch" href="/assets/js/5.779583bc.js"><link rel="prefetch" href="/assets/js/6.e2d69ed0.js"><link rel="prefetch" href="/assets/js/7.3e697f37.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.5a4296f1.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.b66bb086.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/images/logo.png" alt="ALUM.SH - docs" class="logo"> <span class="site-name can-hide">ALUM.SH - docs</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="https://alum.sh/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Main site
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="/" class="nav-link">
+  Documents
+</a></div><div class="nav-item"><a href="https://alum.sh/assets/requests.php" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Requests
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <a href="https://github.com/Noam-Alum/" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="https://alum.sh/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Main site
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="/" class="nav-link">
+  Documents
+</a></div><div class="nav-item"><a href="https://alum.sh/assets/requests.php" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Requests
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <a href="https://github.com/Noam-Alum/" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><a href="/" aria-current="page" class="sidebar-link">ALUM.SH - docs</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>Make backup</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/Make-backup/introduction.html" class="sidebar-link">introduction</a></li><li><a href="/Make-backup/installation.html" class="sidebar-link">Installation</a></li><li><a href="/Make-backup/usage.html" class="sidebar-link">Usage</a></li><li><a href="/Make-backup/script-breakdown.html" aria-current="page" class="active sidebar-link">script breakdown</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/Make-backup/script-breakdown.html#functions" class="sidebar-link">Functions</a></li><li class="sidebar-sub-header"><a href="/Make-backup/script-breakdown.html#main-script" class="sidebar-link">Main script</a></li><li class="sidebar-sub-header"><a href="/Make-backup/script-breakdown.html#visual-explanation" class="sidebar-link">Visual explanation</a></li></ul></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>OTS </span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>WP manager</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>wp_recovery</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>jet-tools</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="script-breakdown"><a href="#script-breakdown" class="header-anchor">#</a> script breakdown</h1> <blockquote><p>This page strictly refers to the make_backup_d.sh script</p></blockquote> <details><summary>make_backup_d.sh:</summary> <iframe src="https://gitcodeembedder.blogspot.com/?gh=Noam-Alum/make_backup/main/opt/make_backup/make_backup_d.sh&amp;lang=bash" width="100%" height="700px" frameborder="0"></iframe></details> <h2 id="functions"><a href="#functions" class="header-anchor">#</a> Functions</h2> <p>These are the functions used in the Make Backup Demon:</p> <ul><li><a href="#addlog">AddLog</a></li> <li><a href="#handleerror">HandleError</a></li> <li><a href="#get-binary">get_binary</a></li> <li><a href="#read-config">read_config</a></li> <li><a href="#keep-backups">keep_backups</a></li></ul> <h3 id="addlog"><a href="#addlog" class="header-anchor">#</a> AddLog</h3> <p>The AddLog function is meant to log to the log file via <code>rsyslog</code> using the <code>logger</code> command.<br>
+Here is the function itself:</p> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token keyword">function</span> <span class="token function-name function">AddLog</span> <span class="token punctuation">{</span>
+    <span class="token comment"># VARS</span>
+    <span class="token builtin class-name">local</span> <span class="token assign-left variable">Tag</span><span class="token operator">=</span><span class="token string">&quot;<span class="token variable">$1</span>&quot;</span>
+    <span class="token builtin class-name">shift</span>
+    <span class="token builtin class-name">local</span> <span class="token assign-left variable">Message</span><span class="token operator">=</span><span class="token string">&quot;<span class="token variable">$*</span>&quot;</span>
+    
+    <span class="token comment"># get binaries</span>
+    <span class="token comment"># search for binary</span>
+    <span class="token keyword">if</span> <span class="token punctuation">[</span> <span class="token operator">!</span> <span class="token parameter variable">-z</span> <span class="token string">&quot;<span class="token variable"><span class="token variable">$(</span><span class="token builtin class-name">command</span> <span class="token parameter variable">-v</span> logger<span class="token variable">)</span></span>&quot;</span> <span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
+        <span class="token comment"># set command to full path to binary</span>
+        <span class="token builtin class-name">export</span> <span class="token assign-left variable">logger</span><span class="token operator">=</span><span class="token string">&quot;<span class="token variable"><span class="token variable">$(</span><span class="token builtin class-name">command</span> <span class="token parameter variable">-v</span> logger<span class="token variable">)</span></span>&quot;</span>
+
+    <span class="token comment"># try running the command if so use it as is</span>
+    <span class="token keyword">elif</span> <span class="token punctuation">[</span> <span class="token operator">!</span> <span class="token parameter variable">-z</span> <span class="token string">&quot;<span class="token variable"><span class="token variable">$(</span>logger <span class="token parameter variable">--help</span> <span class="token operator"><span class="token file-descriptor important">2</span>&gt;</span>/dev/null<span class="token variable">)</span></span>&quot;</span> <span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
+        <span class="token builtin class-name">export</span> <span class="token assign-left variable">logger</span><span class="token operator">=</span><span class="token string">&quot;logger&quot;</span>
+        
+    <span class="token comment"># binary dependency missing exiting</span>
+    <span class="token keyword">else</span>    
+        <span class="token comment"># EXIT</span>
+        <span class="token builtin class-name">exit</span> <span class="token number">1</span>
+    <span class="token keyword">fi</span>
+
+    <span class="token comment"># LOG</span>
+    <span class="token variable">$logger</span> <span class="token parameter variable">-p</span> local0.info <span class="token parameter variable">-t</span> <span class="token string">&quot;[<span class="token variable">$Tag</span>]&quot;</span> <span class="token string">&quot;<span class="token variable">$Message</span>&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>Now because the <a href="#get-binary">get_binary</a> function uses the <code>AddLog</code> function the search for binary needs to happen in the <code>AddLog</code> function manually.<br>
+After locating the logger commands full path to the binary we send an <strong>info</strong> level log message to the <strong>local0</strong> facility with the Tag (first argument/$1) and the message (all other arguments/$*)</p> <p>For example:</p> <div class="language-sh extra-class"><pre class="language-sh"><code>AddLog TEST this is a <span class="token builtin class-name">test</span> <span class="token keyword">for</span> the AddLog <span class="token keyword">function</span>
+</code></pre></div><p>Results:</p> <div class="language- extra-class"><pre class="language-text"><code>noam@noam:~➤ tail -1 /var/log/make_backup.log 
+Apr 18 04:40:10 noam [TEST]: this is a test for the AddLog function
+</code></pre></div><h3 id="handleerror"><a href="#handleerror" class="header-anchor">#</a> HandleError</h3> <p>The HandleError function is meant to catch and report failed bash commands using the <a href="#addlog">AddLog</a> function and <code>trap</code>.<br>
+HandleError:</p> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token keyword">function</span> <span class="token function-name function">HandleError</span> <span class="token punctuation">{</span>
+    <span class="token builtin class-name">local</span> <span class="token assign-left variable">ExitCode</span><span class="token operator">=</span><span class="token variable">$?</span>
+    <span class="token builtin class-name">local</span> <span class="token assign-left variable">ErrorMessage</span><span class="token operator">=</span><span class="token string">&quot;<span class="token variable">$BASH_COMMAND</span> exited with status <span class="token variable">$ExitCode</span>&quot;</span>
+    AddLog <span class="token string">&quot;ERROR&quot;</span> <span class="token string">&quot;<span class="token variable">$ErrorMessage</span>&quot;</span>
+<span class="token punctuation">}</span>
+<span class="token builtin class-name">trap</span> <span class="token string">'HandleError'</span> ERR
+</code></pre></div><p>The <code>trap 'HandleError' ERR</code> line ensures that each error (non-zero exit status) occurs within the scope where the trap is active would trigger the HandleError function.</p> <h3 id="get-binary"><a href="#get-binary" class="header-anchor">#</a> get_binary</h3> <p>get_binary finds and sets as a variable the full path to a command to ensure operation of the script in any environment (if it even exists).<br>
+For example, the <code>ls</code> command:</p> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token assign-left variable">ls</span><span class="token operator">=</span><span class="token string">'/usr/bin/ls'</span>
+<span class="token variable">$ls</span> <span class="token parameter variable">-al</span>
+total <span class="token number">8</span>
+drwxrwxr-x <span class="token number">2</span> noam noam <span class="token number">4096</span> Apr <span class="token number">18</span> 04:58 <span class="token builtin class-name">.</span>
+drwxrwxr-x <span class="token number">3</span> noam noam <span class="token number">4096</span> Apr <span class="token number">18</span> 04:58 <span class="token punctuation">..</span>
+</code></pre></div><p>The actual function:</p> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token keyword">function</span> <span class="token function-name function">get_binary</span> <span class="token punctuation">{</span>
+    <span class="token builtin class-name">trap</span> <span class="token string">'HandleError'</span> ERR
+
+    <span class="token comment"># list all binaries</span>
+    <span class="token assign-left variable">mbn_commands</span><span class="token operator">=</span><span class="token punctuation">(</span>
+        <span class="token string">&quot;rmdir&quot;</span>
+        <span class="token string">&quot;find&quot;</span>
+        <span class="token string">&quot;cat&quot;</span>
+        <span class="token string">&quot;date&quot;</span>
+        <span class="token string">&quot;sed&quot;</span>
+        <span class="token string">&quot;awk&quot;</span>
+        <span class="token string">&quot;tr&quot;</span>
+        <span class="token string">&quot;sort&quot;</span>
+        <span class="token string">&quot;tail&quot;</span>
+        <span class="token string">&quot;rm&quot;</span>
+        <span class="token string">&quot;ls&quot;</span>
+        <span class="token string">&quot;mkdir&quot;</span>
+        <span class="token string">&quot;head&quot;</span>
+        <span class="token string">&quot;rsync&quot;</span>
+        <span class="token string">&quot;echo&quot;</span>
+    <span class="token punctuation">)</span>
+
+    <span class="token comment"># get binaries</span>
+    <span class="token keyword">for</span> <span class="token for-or-select variable">binary</span> <span class="token keyword">in</span> <span class="token variable">${mbn_commands<span class="token punctuation">[</span>@<span class="token punctuation">]</span>}</span>
+    <span class="token keyword">do</span>
+        <span class="token comment"># search for binary</span>
+        <span class="token keyword">if</span> <span class="token punctuation">[</span> <span class="token operator">!</span> <span class="token parameter variable">-z</span> <span class="token string">&quot;<span class="token variable"><span class="token variable">$(</span><span class="token builtin class-name">command</span> <span class="token parameter variable">-v</span> $binary<span class="token variable">)</span></span>&quot;</span> <span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
+            <span class="token comment"># set command to full path to binary</span>
+            <span class="token builtin class-name">export</span> <span class="token variable">$binary</span><span class="token operator">=</span><span class="token string">&quot;<span class="token variable"><span class="token variable">$(</span><span class="token builtin class-name">command</span> <span class="token parameter variable">-v</span> $binary<span class="token variable">)</span></span>&quot;</span>
+
+        <span class="token comment"># try running the command if so use it as is</span>
+        <span class="token keyword">elif</span> <span class="token punctuation">[</span> <span class="token operator">!</span> <span class="token parameter variable">-z</span> <span class="token string">&quot;<span class="token variable"><span class="token variable">$(</span>$binary <span class="token parameter variable">--help</span> <span class="token operator"><span class="token file-descriptor important">2</span>&gt;</span>/dev/null<span class="token variable">)</span></span>&quot;</span> <span class="token punctuation">]</span><span class="token punctuation">;</span><span class="token keyword">then</span>
+            <span class="token builtin class-name">export</span> <span class="token variable">$binary</span><span class="token operator">=</span><span class="token string">&quot;<span class="token variable">$binary</span>&quot;</span>
+        
+        <span class="token comment"># binary dependency missing exiting</span>
+        <span class="token keyword">else</span>
+            <span class="token comment"># LOG--help</span>
+            AddLog <span class="token string">&quot;ERROR&quot;</span> <span class="token string">&quot;binary dependency missing <span class="token entity" title="\&quot;">\&quot;</span><span class="token variable">$binary</span><span class="token entity" title="\&quot;">\&quot;</span> exiting.&quot;</span>
+            
+            <span class="token comment"># EXIT</span>
+            <span class="token builtin class-name">exit</span> <span class="token number">1</span>
+        <span class="token keyword">fi</span>
+    <span class="token keyword">done</span>
+<span class="token punctuation">}</span>
+</code></pre></div><blockquote><p>One thing you can notice is that it traps the <a href="#handleerror">HandleError</a> function to catch errors!</p></blockquote> <p>The mbn_commands (<strong>m</strong>ake <strong>b</strong>ackup <strong>n</strong>ew) array contains the commands used in the script so they can be set as a variable with the full path to its binary.</p> <p>Then the for loop passes every command and checks using the <code>command -v</code> command what is the full path to the binary and if it found it it sets it as the value of the commands variable, if command -v couldn't find the full path to the binary but the command can be used set the value of the command variable as the commands name, else log this incident (using the <a href="#addlog">AddLog</a> function) and exit.</p> <p>For example:</p> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token comment"># lets say mbn_commands is equal to (&quot;ls&quot; &quot;mkdir&quot;)</span>
+<span class="token comment"># ls was found by command -v, mkdir wasn't.</span>
+<span class="token assign-left variable">ls</span><span class="token operator">=</span><span class="token string">'/usr/bin/ls'</span>
+<span class="token assign-left variable">mkdir</span><span class="token operator">=</span><span class="token string">'mkdir'</span>
+<span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">&quot;\<span class="token variable">$ls</span> is going to be used as ls and equal to: <span class="token variable">$ls</span>
+\<span class="token variable">$mkdir</span> is going to be used as mkdir and equal to: <span class="token variable">$mkdir</span>&quot;</span>
+</code></pre></div><p>Results:</p> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token variable">$ls</span> is going to be used as <span class="token function">ls</span> and equal to: /usr/bin/ls
+<span class="token variable">$mkdir</span> is going to be used as <span class="token function">mkdir</span> and equal to: <span class="token function">mkdir</span>
+</code></pre></div><h3 id="read-config"><a href="#read-config" class="header-anchor">#</a> read_config</h3> <p>read_config was built to read and set as variables the directives set in the <code>/etc/make_backup/make_backup.conf</code> file (<a href="/Make-backup/usage.html">explained here</a>).</p> <p>read_config:</p> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token keyword">function</span> <span class="token function-name function">read_config</span> <span class="token punctuation">{</span>
+    
+    <span class="token comment">#### GET BINARY</span>
+    get_binary
+
+    <span class="token builtin class-name">trap</span> <span class="token string">'HandleError'</span> ERR
+
+    <span class="token comment">## GET LIST ALL NEEDED ITEMS</span>
+    <span class="token builtin class-name">export</span> <span class="token assign-left variable">Items</span><span class="token operator">=</span><span class="token string">&quot;<span class="token variable"><span class="token variable">$(</span>$cat /etc/make_backup/make_backup.conf <span class="token operator">|</span> $sed <span class="token parameter variable">-n</span> <span class="token string">'/&gt; start items to backup &lt;$/,/&gt; end items to backup &lt;$/{//!p}'</span><span class="token variable">)</span></span>&quot;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">[</span> <span class="token parameter variable">-z</span> <span class="token string">&quot;<span class="token variable">$Items</span>&quot;</span> <span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
+        AddLog <span class="token string">&quot;ERROR&quot;</span> error <span class="token keyword">while</span> reading items to backup, exiting.
+        <span class="token builtin class-name">exit</span> <span class="token number">1</span>
+    <span class="token keyword">fi</span>
+
+    <span class="token comment">## GET CONF VARS</span>
+    <span class="token assign-left variable">conf_vars</span><span class="token operator">=</span><span class="token punctuation">(</span><span class="token string">&quot;count_location&quot;</span> <span class="token string">&quot;fallback_directory&quot;</span> <span class="token string">&quot;bd_count&quot;</span> <span class="token string">&quot;backup_in_c_month&quot;</span> <span class="token string">&quot;backup_in_month&quot;</span> <span class="token string">&quot;month_in_c_year&quot;</span> <span class="token string">&quot;month_in_year&quot;</span> <span class="token string">&quot;rm_old_backups&quot;</span> <span class="token string">&quot;BACKUP_dir&quot;</span><span class="token punctuation">)</span>
+    <span class="token keyword">for</span> <span class="token for-or-select variable">c_var</span> <span class="token keyword">in</span> <span class="token variable">${conf_vars<span class="token punctuation">[</span>@<span class="token punctuation">]</span>}</span>
+    <span class="token keyword">do</span>
+        <span class="token builtin class-name">export</span> <span class="token variable">$c_var</span><span class="token operator">=</span><span class="token string">&quot;<span class="token variable"><span class="token variable">$(</span>$awk <span class="token parameter variable">-v</span> <span class="token assign-left variable">cvar</span><span class="token operator">=</span><span class="token string">&quot;<span class="token variable">$c_var</span>&quot;</span> <span class="token parameter variable">-F</span> <span class="token string">'&quot;'</span> <span class="token string">'$1 ~ cvar {print $2}'</span> /etc/make_backup/make_backup.conf<span class="token variable">)</span></span>&quot;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">[</span> <span class="token parameter variable">-z</span> <span class="token string">&quot;<span class="token variable">$c_var</span>&quot;</span> <span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
+            AddLog <span class="token string">&quot;ERROR&quot;</span> error <span class="token keyword">while</span> allocating <span class="token punctuation">\</span>&quot;<span class="token variable">$c_var</span><span class="token punctuation">\</span>&quot;, exiting.
+            <span class="token builtin class-name">exit</span> <span class="token number">1</span>
+        <span class="token keyword">fi</span>
+    <span class="token keyword">done</span>
+
+    <span class="token comment">## CHECK</span>
+    <span class="token comment"># COUNT FILE</span>
+    <span class="token keyword">if</span> <span class="token punctuation">[</span> <span class="token operator">!</span> <span class="token parameter variable">-f</span> <span class="token string">&quot;<span class="token variable">$count_location</span>&quot;</span> <span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
+        AddLog <span class="token string">&quot;ERROR&quot;</span> count <span class="token function">file</span> <span class="token string">&quot;<span class="token variable">$count_location</span>&quot;</span> could not be used, exiting.
+        <span class="token builtin class-name">exit</span> <span class="token number">1</span>
+    <span class="token keyword">fi</span>
+
+    <span class="token comment">## BACKUP DIR</span>
+    <span class="token keyword">if</span> <span class="token punctuation">[</span> <span class="token parameter variable">-z</span> <span class="token string">&quot;<span class="token variable">$BACKUP_dir</span>&quot;</span> <span class="token punctuation">]</span> <span class="token operator">||</span> <span class="token punctuation">[</span> <span class="token operator">!</span> <span class="token parameter variable">-e</span> <span class="token string">&quot;<span class="token variable">$BACKUP_dir</span>&quot;</span> <span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
+        <span class="token keyword">if</span> <span class="token punctuation">[</span> <span class="token operator">!</span> <span class="token parameter variable">-z</span> <span class="token string">&quot;<span class="token variable">$fallback_directory</span>&quot;</span> <span class="token punctuation">]</span> <span class="token operator">&amp;&amp;</span> <span class="token punctuation">[</span> <span class="token parameter variable">-e</span> <span class="token string">&quot;<span class="token variable">$fallback_directory</span>&quot;</span> <span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
+            <span class="token comment"># SET BACKUP_dir to fallback_directory to avoid crashing</span>
+            <span class="token builtin class-name">export</span> <span class="token assign-left variable">BACKUP_dir</span><span class="token operator">=</span><span class="token variable">$fallback_directory</span>
+
+            <span class="token comment"># set old backup removal to no</span>
+            <span class="token builtin class-name">export</span> <span class="token assign-left variable">rm_old_backups</span><span class="token operator">=</span><span class="token string">&quot;no&quot;</span>
+        <span class="token keyword">else</span>
+            AddLog <span class="token string">&quot;ERROR&quot;</span> No useable backup location, check /etc/make_backup/make_backup.conf <span class="token keyword">for</span> <span class="token function">more</span> information. exiting.
+            <span class="token builtin class-name">exit</span> <span class="token number">1</span>
+        <span class="token keyword">fi</span>
+    <span class="token keyword">fi</span>
+<span class="token punctuation">}</span>
+</code></pre></div><div class="custom-block tip"><p class="custom-block-title">TIP</p> <p>Almost every function in the script uses the <a href="#addlog">AddLog</a> and <a href="#handleerror">HandleError</a> functions.</p></div> <p>After mapping the the commands to variables with the full path the their binaries using the <a href="#get-binary">get_binary</a> function the function first gets all the Items that the user whats to backup (if found non exit and log), then it runs trough each directive in the conf_vars array and phrases it to the actual value (set by user), then assigns it as a variable with the name of the directive.</p> <p>Regularly the BACKUP_dir is set to the main backup directory, if it couldn't be used the fallback directory would be set as BACKUP_dir and the rm_old_backups directive would be set to <strong>no</strong>.</p> <p>For example:</p> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token comment"># This (in the configuration file):</span>
+<span class="token assign-left variable">fallback_directory</span><span class="token operator">=</span><span class="token string">&quot;/tmp&quot;</span>
+<span class="token operator">&gt;</span> start items to backup <span class="token operator">&lt;</span>
+/home/
+/tmp/
+<span class="token operator">&gt;</span> end items to backup <span class="token operator">&lt;</span>
+
+<span class="token comment"># Would turn to this:</span>
+<span class="token assign-left variable">Items</span><span class="token operator">=</span><span class="token string">&quot;/home/ /tmp/&quot;</span>
+<span class="token assign-left variable">fallback_directory</span><span class="token operator">=</span><span class="token string">&quot;/tmp&quot;</span>
+</code></pre></div><h3 id="keep-backups"><a href="#keep-backups" class="header-anchor">#</a> keep_backups</h3> <p>The keep_backups removes old backups based on the retention set in the configuration file.</p> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token keyword">function</span> <span class="token function-name function">keep_backups</span> <span class="token punctuation">{</span>
+    <span class="token builtin class-name">trap</span> <span class="token string">'HandleError'</span> ERR
+
+    <span class="token comment">#### GET BINARY</span>
+    get_binary
+
+    <span class="token comment">#### READ CONFIG ####</span>
+    read_config
+
+    <span class="token comment"># CHECK IF THERE ARE BACKUPS IN THE Laptop_backups DIR</span>
+    <span class="token keyword">if</span> <span class="token punctuation">[</span> <span class="token operator">!</span> <span class="token parameter variable">-z</span> <span class="token string">&quot;<span class="token variable"><span class="token variable">$(</span>$ls $BACKUP_dir/ <span class="token operator"><span class="token file-descriptor important">2</span>&gt;</span> /dev/null<span class="token variable">)</span></span>&quot;</span> <span class="token punctuation">]</span> <span class="token operator">&amp;&amp;</span> <span class="token punctuation">[</span> <span class="token string">&quot;<span class="token variable">$rm_old_backups</span>&quot;</span> <span class="token operator">==</span> <span class="token string">&quot;yes&quot;</span> <span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
+        <span class="token comment"># GET BIGGEST YEAR</span>
+        <span class="token assign-left variable">biggest_year</span><span class="token operator">=</span><span class="token string">&quot;<span class="token variable">$BACKUP_dir</span>/<span class="token variable"><span class="token variable">$(</span>$ls $BACKUP_dir <span class="token operator"><span class="token file-descriptor important">2</span>&gt;</span> /dev/null <span class="token operator">|</span> $sort <span class="token parameter variable">-n</span> <span class="token operator">|</span> $tail <span class="token parameter variable">-1</span><span class="token variable">)</span></span>&quot;</span>
+
+        <span class="token comment"># GEt ALL YEARS DIRECTORIES</span>
+        <span class="token keyword">for</span> <span class="token for-or-select variable">year_dir</span> <span class="token keyword">in</span> <span class="token variable">$BACKUP_dir</span>/*
+        <span class="token keyword">do</span>
+            <span class="token comment"># CHECK IF THIS IS THE BIGGEST YEAR</span>
+            <span class="token keyword">if</span> <span class="token punctuation">[</span> <span class="token string">&quot;<span class="token variable">$year_dir</span>&quot;</span> <span class="token operator">==</span> <span class="token string">&quot;<span class="token variable">$biggest_year</span>&quot;</span> <span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
+
+                <span class="token comment"># COUNT MONTHS</span>
+                <span class="token assign-left variable">month_count</span><span class="token operator">=</span><span class="token number">0</span>
+
+                <span class="token comment"># GET BIGGEST MONTH</span>
+                <span class="token assign-left variable">biggest_month</span><span class="token operator">=</span><span class="token string">&quot;<span class="token variable">$year_dir</span>/<span class="token variable"><span class="token variable">$(</span>$ls $year_dir <span class="token operator"><span class="token file-descriptor important">2</span>&gt;</span> /dev/null<span class="token operator">|</span> $sort <span class="token parameter variable">-n</span> <span class="token operator">|</span> $tail <span class="token parameter variable">-1</span><span class="token variable">)</span></span>&quot;</span>
+
+                <span class="token comment"># GEt ALL MONTH DIRECTORIES</span>
+                <span class="token keyword">for</span> <span class="token for-or-select variable">month_dir</span> <span class="token keyword">in</span> <span class="token variable">$year_dir</span>/*
+                <span class="token keyword">do</span>
+                    <span class="token assign-left variable">month_count</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$((</span> $month_count <span class="token operator">+</span> <span class="token number">1</span> <span class="token variable">))</span></span>
+
+                    <span class="token comment"># CHECK IF COUNT IS OVER month_in_year</span>
+                    <span class="token keyword">if</span> <span class="token punctuation">[</span> <span class="token variable">$month_count</span> <span class="token parameter variable">-gt</span> <span class="token variable">$month_in_c_year</span> <span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
+                        <span class="token variable">$rm</span> <span class="token parameter variable">-rf</span> <span class="token variable">$year_dir</span>/<span class="token variable"><span class="token variable">$(</span>$ls <span class="token parameter variable">-t</span> <span class="token parameter variable">--time</span><span class="token operator">=</span>atime <span class="token parameter variable">-1</span> $year_dir <span class="token operator"><span class="token file-descriptor important">2</span>&gt;</span> /dev/null <span class="token operator">|</span> $tail <span class="token parameter variable">-1</span><span class="token variable">)</span></span>
+                        AddLog <span class="token string">&quot;CLEARED SPACE&quot;</span> removed old month directory <span class="token punctuation">\</span>&quot;<span class="token variable">$year_dir</span>/<span class="token variable"><span class="token variable">$(</span>$ls <span class="token parameter variable">-t</span> <span class="token parameter variable">--time</span><span class="token operator">=</span>atime <span class="token parameter variable">-1</span> $year_dir <span class="token operator"><span class="token file-descriptor important">2</span>&gt;</span> /dev/null <span class="token operator">|</span> $tail <span class="token parameter variable">-1</span><span class="token variable">)</span></span><span class="token punctuation">\</span>&quot;
+                    <span class="token keyword">fi</span>
+                    
+                    <span class="token comment"># CHECK IF MONTH_DIR IS THE BIGGEST MONTH</span>
+                    <span class="token keyword">if</span> <span class="token punctuation">[</span> <span class="token string">&quot;<span class="token variable">$month_dir</span>&quot;</span> <span class="token operator">==</span> <span class="token string">&quot;<span class="token variable">$biggest_month</span>&quot;</span> <span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
+                        <span class="token comment"># COUNT BACKUPS</span>
+                        <span class="token assign-left variable">backup_count</span><span class="token operator">=</span><span class="token number">0</span>
+
+                        <span class="token comment"># GEt ALL BACKUPS DIRECTORIES</span>
+                        <span class="token keyword">for</span> <span class="token for-or-select variable">backup</span> <span class="token keyword">in</span> <span class="token variable">$month_dir</span>/*
+                        <span class="token keyword">do</span>
+                            <span class="token comment"># ADD ONE TO COUNT</span>
+                            <span class="token assign-left variable">backup_count</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$((</span> $backup_count <span class="token operator">+</span> <span class="token number">1</span> <span class="token variable">))</span></span>
+
+                            <span class="token comment"># CHECK IF COUNT IS OVER backup_in_c_month</span>
+                            <span class="token keyword">if</span> <span class="token punctuation">[</span> <span class="token variable">$backup_count</span> <span class="token parameter variable">-gt</span> <span class="token variable">$backup_in_c_month</span> <span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
+                                <span class="token comment"># REAMOVE OLDEST BACKUP IN MONTH DIR</span>
+                                <span class="token variable">$rm</span> <span class="token parameter variable">-rf</span> <span class="token variable">$month_dir</span>/<span class="token variable"><span class="token variable">$(</span>$ls <span class="token parameter variable">-t</span> <span class="token parameter variable">--time</span><span class="token operator">=</span>atime <span class="token parameter variable">-1</span> $month_dir <span class="token operator"><span class="token file-descriptor important">2</span>&gt;</span> /dev/null <span class="token operator">|</span> $tail <span class="token parameter variable">-1</span><span class="token variable">)</span></span>
+                                AddLog <span class="token string">&quot;CLEARED SPACE&quot;</span> removed old backup directory <span class="token punctuation">\</span>&quot;<span class="token variable">$month_dir</span>/<span class="token variable"><span class="token variable">$(</span>$ls <span class="token parameter variable">-t</span> <span class="token parameter variable">--time</span><span class="token operator">=</span>atime <span class="token parameter variable">-1</span> $month_dir <span class="token operator"><span class="token file-descriptor important">2</span>&gt;</span> /dev/null <span class="token operator">|</span> $tail <span class="token parameter variable">-1</span><span class="token variable">)</span></span><span class="token punctuation">\</span>&quot;
+                            <span class="token keyword">fi</span>
+                        <span class="token keyword">done</span>
+                    <span class="token keyword">else</span>
+                        <span class="token comment"># COUNT BACKUPS</span>
+                        <span class="token assign-left variable">backup_count</span><span class="token operator">=</span><span class="token number">0</span>
+
+                        <span class="token comment"># GEt ALL BACKUPS DIRECTORIES</span>
+                        <span class="token keyword">for</span> <span class="token for-or-select variable">backup</span> <span class="token keyword">in</span> <span class="token variable">$month_dir</span>/*
+                        <span class="token keyword">do</span>
+                            <span class="token comment"># ADD ONE TO COUNT</span>
+                            <span class="token assign-left variable">backup_count</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$((</span> $backup_count <span class="token operator">+</span> <span class="token number">1</span> <span class="token variable">))</span></span>
+
+                            <span class="token comment"># CHECK IF COUNT IS OVER backup_in_c_month</span>
+                            <span class="token keyword">if</span> <span class="token punctuation">[</span> <span class="token variable">$backup_count</span> <span class="token parameter variable">-gt</span> <span class="token variable">$backup_in_month</span> <span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
+                                <span class="token comment"># REAMOVE OLDEST BACKUP IN MONTH DIR</span>
+                                <span class="token variable">$rm</span> <span class="token parameter variable">-rf</span> <span class="token variable">$month_dir</span>/<span class="token variable"><span class="token variable">$(</span>$ls <span class="token parameter variable">-t</span> <span class="token parameter variable">--time</span><span class="token operator">=</span>atime <span class="token parameter variable">-1</span> $month_dir <span class="token operator"><span class="token file-descriptor important">2</span>&gt;</span> /dev/null <span class="token operator">|</span> $tail <span class="token parameter variable">-1</span><span class="token variable">)</span></span>
+                                AddLog <span class="token string">&quot;CLEARED SPACE&quot;</span> removed old backup directory <span class="token punctuation">\</span>&quot;<span class="token variable">$month_dir</span>/<span class="token variable"><span class="token variable">$(</span>$ls <span class="token parameter variable">-t</span> <span class="token parameter variable">--time</span><span class="token operator">=</span>atime <span class="token parameter variable">-1</span> $month_dir <span class="token operator"><span class="token file-descriptor important">2</span>&gt;</span> /dev/null <span class="token operator">|</span> $tail <span class="token parameter variable">-1</span><span class="token variable">)</span></span><span class="token punctuation">\</span>&quot;
+                            <span class="token keyword">fi</span>
+                        <span class="token keyword">done</span>
+                    <span class="token keyword">fi</span>
+                <span class="token keyword">done</span>
+            <span class="token keyword">else</span>
+                <span class="token comment"># COUNT MONTHS</span>
+                <span class="token assign-left variable">month_count</span><span class="token operator">=</span><span class="token number">0</span>
+
+                <span class="token comment"># GEt ALL MONTH DIRECTORIES</span>
+                <span class="token keyword">for</span> <span class="token for-or-select variable">month_dir</span> <span class="token keyword">in</span> <span class="token variable">$year_dir</span>/*
+                <span class="token keyword">do</span>
+                    <span class="token assign-left variable">month_count</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$((</span> $month_count <span class="token operator">+</span> <span class="token number">1</span> <span class="token variable">))</span></span>
+                    <span class="token comment"># CHECK IF COUNT IS OVER month_in_year</span>
+                    <span class="token keyword">if</span> <span class="token punctuation">[</span> <span class="token variable">$month_count</span> <span class="token parameter variable">-gt</span> <span class="token variable">$month_in_year</span> <span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
+                        <span class="token variable">$rm</span> <span class="token parameter variable">-rf</span> <span class="token variable">$year_dir</span>/<span class="token variable"><span class="token variable">$(</span>$ls <span class="token parameter variable">-t</span> <span class="token parameter variable">--time</span><span class="token operator">=</span>atime <span class="token parameter variable">-1</span> $year_dir <span class="token operator"><span class="token file-descriptor important">2</span>&gt;</span> /dev/null <span class="token operator">|</span> $tail <span class="token parameter variable">-1</span><span class="token variable">)</span></span>
+                        AddLog <span class="token string">&quot;CLEARED SPACE&quot;</span> removed old month directory <span class="token punctuation">\</span>&quot;<span class="token variable">$year_dir</span>/<span class="token variable"><span class="token variable">$(</span>$ls <span class="token parameter variable">-t</span> <span class="token parameter variable">--time</span><span class="token operator">=</span>atime <span class="token parameter variable">-1</span> $year_dir <span class="token operator"><span class="token file-descriptor important">2</span>&gt;</span> /dev/null <span class="token operator">|</span> $tail <span class="token parameter variable">-1</span><span class="token variable">)</span></span><span class="token punctuation">\</span>&quot;
+                    <span class="token keyword">fi</span>
+
+
+                    <span class="token comment"># COUNT BACKUPS</span>
+                    <span class="token assign-left variable">backup_count</span><span class="token operator">=</span><span class="token number">0</span>
+
+                    <span class="token comment"># GEt ALL BACKUPS DIRECTORIES</span>
+                    <span class="token keyword">for</span> <span class="token for-or-select variable">backup</span> <span class="token keyword">in</span> <span class="token variable">$month_dir</span>/*
+                    <span class="token keyword">do</span>
+                        <span class="token comment"># ADD ONE TO COUNT</span>
+                        <span class="token assign-left variable">backup_count</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$((</span> $backup_count <span class="token operator">+</span> <span class="token number">1</span> <span class="token variable">))</span></span>
+
+                        <span class="token comment"># CHECK IF COUNT IS OVER backup_in_c_month</span>
+                        <span class="token keyword">if</span> <span class="token punctuation">[</span> <span class="token variable">$backup_count</span> <span class="token parameter variable">-gt</span> <span class="token variable">$backup_in_month</span> <span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
+                            <span class="token comment"># REAMOVE OLDEST BACKUP IN MONTH DIR</span>
+                            <span class="token variable">$rm</span> <span class="token parameter variable">-rf</span> <span class="token variable">$month_dir</span>/<span class="token variable"><span class="token variable">$(</span>$ls <span class="token parameter variable">-t</span> <span class="token parameter variable">--time</span><span class="token operator">=</span>atime <span class="token parameter variable">-1</span> $month_dir <span class="token operator"><span class="token file-descriptor important">2</span>&gt;</span> /dev/null <span class="token operator">|</span> $tail <span class="token parameter variable">-1</span><span class="token variable">)</span></span>
+                            AddLog <span class="token string">&quot;CLEARED SPACE&quot;</span> removed old backup directory <span class="token punctuation">\</span>&quot;<span class="token variable">$month_dir</span>/<span class="token variable"><span class="token variable">$(</span>$ls <span class="token parameter variable">-t</span> <span class="token parameter variable">--time</span><span class="token operator">=</span>atime <span class="token parameter variable">-1</span> $month_dir <span class="token operator"><span class="token file-descriptor important">2</span>&gt;</span> /dev/null <span class="token operator">|</span> $tail <span class="token parameter variable">-1</span><span class="token variable">)</span></span><span class="token punctuation">\</span>&quot;
+                        <span class="token keyword">fi</span>
+                    <span class="token keyword">done</span>  
+                <span class="token keyword">done</span>
+            <span class="token keyword">fi</span>
+        <span class="token keyword">done</span>
+    <span class="token keyword">fi</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>I know this does not look the best, lets try to make it simpler to understand.</p> <p>After calling read_config, get_binary and trapping HandleError the function proceeds to check if there are even any backups found in the current backup directory (main/fallback) and the rm_old_backups is set to <strong>yes</strong>.</p> <p>It has two sections:</p> <ul><li><a href="#year">Year</a> <ul><li><a href="#month">Month</a></li></ul></li></ul> <h4 id="year"><a href="#year" class="header-anchor">#</a> year</h4> <p>If the statement is true, the function for each year in the backup directory:</p> <table><thead><tr><th>biggest year</th> <th>any other year</th></tr></thead> <tbody><tr><td>Remove Months by the <strong>month_in_c_year</strong> directive</td> <td>Remove Months by the <strong>month_in_year</strong> directive</td></tr></tbody></table> <h4 id="month"><a href="#month" class="header-anchor">#</a> month</h4> <table><thead><tr><th>Current month</th> <th>any other month</th></tr></thead> <tbody><tr><td>Remove Backups by the <strong>backup_in_c_month</strong> directive</td> <td>Remove Backups by the <strong>backup_in_month</strong> directive</td></tr></tbody></table> <h2 id="main-script"><a href="#main-script" class="header-anchor">#</a> Main script</h2> <p>The main script listens for the accession when the count in the count file is equal to the value set in the <strong>bd_count</strong> directive and executes if so and listens for requests from the <strong>UDEV</strong> and checks if the count file is valid and if so adds 1 to the counter.</p> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token keyword">while</span> <span class="token boolean">true</span><span class="token punctuation">;</span> <span class="token keyword">do</span>
+    <span class="token comment">#### READ CONFIG ####</span>
+    read_config
+
+    <span class="token comment">#### GET BINARY</span>
+    get_binary
+
+    <span class="token comment">#### CATCH UDEV ####</span>
+    <span class="token keyword">if</span> <span class="token punctuation">[</span> <span class="token string">&quot;<span class="token variable">$1</span>&quot;</span> <span class="token operator">==</span> <span class="token string">&quot;UDEV&quot;</span> <span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
+        <span class="token keyword">if</span> <span class="token punctuation">[</span> <span class="token operator">!</span> <span class="token parameter variable">-s</span> <span class="token string">&quot;<span class="token variable">$count_location</span>&quot;</span> <span class="token punctuation">]</span> <span class="token operator">||</span> <span class="token punctuation">[</span> <span class="token variable"><span class="token variable">$(</span><span class="token function">cat</span> <span class="token string">&quot;<span class="token variable">$count_location</span>&quot;</span><span class="token variable">)</span></span> <span class="token parameter variable">-gt</span> <span class="token variable">$bd_count</span> <span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
+            <span class="token comment"># START COUNT</span>
+            <span class="token builtin class-name">echo</span> <span class="token string">'0'</span> <span class="token operator">&gt;</span> <span class="token variable">$count_location</span>
+
+            <span class="token comment"># LOG</span>
+            AddLog <span class="token string">&quot;STARTING-COUNT&quot;</span> <span class="token string">&quot;set count to <span class="token entity" title="\&quot;">\&quot;</span>0<span class="token entity" title="\&quot;">\&quot;</span> count file <span class="token entity" title="\&quot;">\&quot;</span><span class="token variable">$count_location</span><span class="token entity" title="\&quot;">\&quot;</span> was empty or above <span class="token entity" title="\&quot;">\&quot;</span><span class="token variable">$bd_count</span><span class="token entity" title="\&quot;">\&quot;</span>.&quot;</span>
+
+            <span class="token comment"># EXIT</span>
+            <span class="token builtin class-name">exit</span> <span class="token number">0</span>
+        <span class="token keyword">elif</span> <span class="token punctuation">[</span><span class="token punctuation">[</span> <span class="token string">&quot;<span class="token variable"><span class="token variable">$(</span><span class="token function">cat</span> <span class="token string">&quot;<span class="token variable">$count_location</span>&quot;</span><span class="token variable">)</span></span>&quot;</span> <span class="token operator">=~</span> ^<span class="token punctuation">[</span><span class="token number">0</span>-9<span class="token punctuation">]</span>+$ <span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
+            <span class="token comment"># LOG</span>
+            AddLog <span class="token string">&quot;CHANGING-COUNT&quot;</span> <span class="token string">&quot;changing count to <span class="token entity" title="\&quot;">\&quot;</span><span class="token variable"><span class="token variable">$((</span> $<span class="token punctuation">(</span>cat $count_location<span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token number">1</span> <span class="token variable">))</span></span><span class="token entity" title="\&quot;">\&quot;</span>.&quot;</span>
+
+            <span class="token comment"># ADD COUNT</span>
+            <span class="token builtin class-name">echo</span> <span class="token variable"><span class="token variable">$((</span> $<span class="token punctuation">(</span>cat $count_location<span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token number">1</span> <span class="token variable">))</span></span> <span class="token operator">&gt;</span> <span class="token variable">$count_location</span>
+
+            <span class="token comment"># EXIT</span>
+            <span class="token builtin class-name">exit</span> <span class="token number">0</span>
+        <span class="token keyword">else</span>
+            <span class="token comment"># LOG</span>
+            AddLog <span class="token string">&quot;ERROR&quot;</span> <span class="token string">&quot;count file <span class="token variable">$count_location</span> is not numeric&quot;</span>
+
+            <span class="token comment"># EXIT</span>
+            <span class="token builtin class-name">exit</span> <span class="token number">1</span>
+        <span class="token keyword">fi</span>
+    <span class="token keyword">fi</span>
+
+    <span class="token comment">#### KEEP BACKUPS NEEDED ####</span>
+    keep_backups
+
+    <span class="token comment">#### CHECK IF COUNT IS BIGGER THAN 10 ####</span>
+    <span class="token keyword">if</span> <span class="token punctuation">[</span> <span class="token variable"><span class="token variable">$(</span>$cat $count_location<span class="token variable">)</span></span> <span class="token parameter variable">-eq</span> <span class="token variable">$bd_count</span> <span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
+            <span class="token function">sleep</span> <span class="token number">10</span>
+            <span class="token comment">### START SCRIPT</span>
+
+            <span class="token comment">#### READ CONFIG ####</span>
+            read_config
+
+            <span class="token comment">## IF NOT EXIST CREATE YEAR AND MONTH DIRS</span>
+            <span class="token comment"># YEAR</span>
+            <span class="token assign-left variable">year_dir</span><span class="token operator">=</span><span class="token string">&quot;<span class="token variable"><span class="token variable">$(</span>$date <span class="token string">'+%Y'</span><span class="token variable">)</span></span>&quot;</span>
+
+            <span class="token comment"># MONTH</span>
+            <span class="token assign-left variable">month_dir</span><span class="token operator">=</span><span class="token string">&quot;<span class="token variable"><span class="token variable">$(</span>$date <span class="token string">'+%m'</span><span class="token variable">)</span></span>&quot;</span>
+
+            <span class="token variable">$mkdir</span> <span class="token parameter variable">-p</span> <span class="token variable">$BACKUP_dir</span>/<span class="token variable">$year_dir</span>/<span class="token variable">$month_dir</span>
+
+            <span class="token comment"># CHECK FOR BACKUPS IN fallback_directory</span>
+            <span class="token keyword">if</span> <span class="token punctuation">[</span> <span class="token string">&quot;<span class="token variable">$BACKUP_dir</span>&quot;</span> <span class="token operator">!=</span> <span class="token string">&quot;<span class="token variable">$fallback_directory</span>&quot;</span> <span class="token punctuation">]</span> <span class="token operator">&amp;&amp;</span> <span class="token punctuation">[</span> <span class="token parameter variable">-e</span> <span class="token variable">$fallback_directory</span> <span class="token punctuation">]</span> <span class="token operator">&amp;&amp;</span> <span class="token punctuation">[</span> <span class="token variable"><span class="token variable">`</span><span class="token function">ls</span> $fallback_directory <span class="token operator">|</span> <span class="token function">wc</span> <span class="token parameter variable">-l</span><span class="token variable">`</span></span> <span class="token parameter variable">-ne</span> <span class="token number">0</span> <span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
+                AddLog <span class="token string">&quot;MOVING BACKUPS&quot;</span> found old backups <span class="token keyword">in</span> fallback directory, moving them to main backup directory.
+                <span class="token variable">$rsync</span> <span class="token parameter variable">-av</span> --remove-source-files --prune-empty-dirs <span class="token variable">$fallback_directory</span>/* <span class="token variable">$BACKUP_dir</span> <span class="token operator">&amp;&gt;</span> /dev/null
+                <span class="token variable">$rm</span> <span class="token parameter variable">-rf</span> <span class="token variable">$fallback_directory</span>/*
+            <span class="token keyword">fi</span>
+
+            <span class="token comment">## CREATE BACKUP DIRECTORY</span>
+            <span class="token assign-left variable">BACKUP_dir</span><span class="token operator">=</span><span class="token string">&quot;<span class="token variable">$BACKUP_dir</span>/<span class="token variable">$year_dir</span>/<span class="token variable">$month_dir</span>/<span class="token variable"><span class="token variable">$(</span>$tr <span class="token parameter variable">-dc</span> <span class="token string">'a-zA-Z0-9'</span> <span class="token operator">&lt;</span> /dev/random <span class="token operator">|</span> $head <span class="token parameter variable">-c</span> <span class="token number">6</span><span class="token variable">)</span></span>_<span class="token variable"><span class="token variable">$(</span>$date <span class="token string">'+%d_%H_%M'</span><span class="token variable">)</span></span>/&quot;</span>
+            <span class="token variable">$mkdir</span> <span class="token string">&quot;<span class="token variable">$BACKUP_dir</span>&quot;</span>
+
+            <span class="token comment">## BACKUP FILES</span>
+            <span class="token comment"># LOG</span>
+            AddLog <span class="token string">&quot;BACKUP STARTED&quot;</span> backup started at <span class="token variable">$BACKUP_dir</span><span class="token builtin class-name">.</span>
+            AddLog <span class="token string">&quot;BACKUPING FILES&quot;</span> started backuping files to <span class="token variable">$BACKUP_dir</span> <span class="token builtin class-name">:</span>
+
+            <span class="token keyword">for</span> <span class="token for-or-select variable">Item</span> <span class="token keyword">in</span> <span class="token variable">$Items</span>
+            <span class="token keyword">do</span>
+                <span class="token comment"># RSYNC</span>
+                AddLog <span class="token string">&quot;BACKUPING ITEM&quot;</span> <span class="token string">&quot;<span class="token variable">$Item</span>&quot;</span>
+                <span class="token variable">$rsync</span> <span class="token parameter variable">-av</span> <span class="token parameter variable">--relative</span> <span class="token string">&quot;<span class="token variable">$Item</span>&quot;</span> <span class="token string">&quot;<span class="token variable">$BACKUP_dir</span>&quot;</span> <span class="token operator">&amp;&gt;</span> /dev/null
+            <span class="token keyword">done</span>
+
+            <span class="token comment"># LOG</span>
+            AddLog <span class="token string">&quot;FINISHED BACKUP&quot;</span> backup at <span class="token variable">$BACKUP_dir</span>
+
+            <span class="token variable">$echo</span> <span class="token string">&quot;0&quot;</span> <span class="token operator">&gt;</span> <span class="token variable">$count_location</span>
+            <span class="token comment"># LOG</span>
+            AddLog <span class="token string">&quot;RESTORING COUNT&quot;</span> setting activation count to <span class="token punctuation">\</span>&quot;0<span class="token punctuation">\</span>&quot;.
+
+            <span class="token builtin class-name">exit</span> <span class="token number">0</span>
+    <span class="token keyword">fi</span>
+
+    <span class="token function">sleep</span> <span class="token number">2</span>
+<span class="token keyword">done</span>
+</code></pre></div><p>After reading the configuration file using the <a href="#read-config">read_config</a> function and mapping the path to binary to variables using the <a href="#get-binary">get_binary</a> function the main script does the following things:</p> <h4 id="catch-udev"><a href="#catch-udev" class="header-anchor">#</a> CATCH UDEV</h4> <p>the catch udev section is meant to catch calls from UDEV to add 1 to the counter.<br>
+It also checks for any errors with the counter file:</p> <ol><li>If file is empty.</li> <li>If the count is over the <strong>bd_count</strong> directive.</li> <li>If the file has non numeric contents.</li></ol> <h4 id="keep-backups-2"><a href="#keep-backups-2" class="header-anchor">#</a> KEEP BACKUPS</h4> <p>Runs the <a href="#keep-backups">keep_backups</a> function every 2 seconds (every while loop).</p> <h4 id="check-if-count-is-bigger-than-10"><a href="#check-if-count-is-bigger-than-10" class="header-anchor">#</a> CHECK IF COUNT IS BIGGER THAN 10</h4> <p>If the bd_count variable is bigger than the value in the count file then:</p> <ul><li>Sleep for 10 seconds to allow UDEV to mount the block device properly.</li> <li>Create a backup year and month directories if not exist.</li> <li>If found old backups in the fallback backup directory move then to the main backup directory.</li> <li>Create the current backup backup directory with a prefix of random characters and numbers and postfix of the current day hour and minute (as the year and the month are in the path of the directory).</li> <li>Backup all the items in the <code>$Items</code> variable to the current backup directory.</li> <li>reset the count file counter.</li></ul> <p>Thats it.</p> <h2 id="visual-explanation"><a href="#visual-explanation" class="header-anchor">#</a> Visual explanation</h2> <p><img src="/images/make_backup_visual.png" alt="image"></p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/Make-backup/usage.html" class="prev">
+        Usage
+      </a></span> <span class="next"><a href="/OTS/introduction-installation.html">
+        One Time Secret CLI
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.1bae7884.js" defer></script><script src="/assets/js/2.98e47f96.js" defer></script><script src="/assets/js/1.8765c949.js" defer></script><script src="/assets/js/25.8370c73b.js" defer></script>
+  </body>
+</html>
