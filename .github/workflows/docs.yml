@@ -40,6 +40,4 @@ jobs:
           # @see https://docs.github.com/en/actions/reference/authentication-in-a-workflow#about-the-github_token-secret
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Create CNAME file
-        with:
-          target_branch: gh-pages
-        run: echo "docs.alum.sh" > CNAME
+        run: echo "docs.alum.sh" > docs/.vuepress/dist/CNAME
