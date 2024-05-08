@@ -42,4 +42,4 @@ jobs:
       - name: Create CNAME file
         with:
           target_branch: gh-pages
-          run: echo "docs.alum.sh" > docs/.vuepress/dist/CNAME
+        run: echo "docs.alum.sh" > CNAME
