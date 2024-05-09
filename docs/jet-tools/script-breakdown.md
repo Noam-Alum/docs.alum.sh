@@ -34,28 +34,11 @@ hello
 The Define tools section is meant to map user input to the tool (function) needed to be called
 ```sh
 echo "Jet-Tools:"
-Tools=("1.imunify malicious list" "| 2.Alter tables" "| 3.WordPress related" "| 4.Running proc" "| 5.litespeed data domains" "| 6.download data")
+Tools=("imunify malicious list" "Alter tables" "WordPress related" "Running proc" "litespeed data domains" "download data")
 get_input $1
-
-tool_id=$(( $tool_id - 1 ))
 ```
 
 the Define tools section uses the [get_input](/jet-tools/script-breakdown.html#get-input) function to allow users to select what tool they want to use.
-```sh
-function get_input {
-	echo -e "${Tools[@]}\n$1\n$1"
-	[ -z $1 ] && read -p "- Which tool do you want to use? : " tool_id < /dev/tty || tool_id="$1"
-
-	while [ -z "$tool_id" ]; do
-		get_input
-	done
-
-	while [ $tool_id -gt ${#Tools[@]} ] || [ $tool_id -lt 0 ] || ! [[ $tool_id =~ ^[0-9]+$ ]]; do
-		echo -e "\033[0;31mYou can't use $tool_id, it does not exist or is not a valid integer!\033[0m"
-			get_input
-	done
-}
-```
 This function would output the full array of tools and a prompt asking the user which tool he whats to use, if you take a look of the third line you would see how I implemented the use of options all trough this script. (if `$1` is empty then get the info else the variable is equal to `$1`)
 
 Finally the `$tool_id` is subtracted by one:
@@ -68,13 +51,13 @@ The `$tool_id` variable is the index of the item in the `Tools` array that repre
 :::
 
 ### Call tool:
-The call tool section strips the item in the `Tools` array in the index of `$tool_id` and saves it as `$tool_function` for later use.
+The call tool section formats the item in the `Tools` array in the index of `$tool_id` and saves it as `$tool_function` for later use.
 ```sh
-tool_function="$(echo ${Tools[$tool_id]} | awk -F '.' '{print $2}' | tr -s " " "_")"
+tool_function=$(echo "${Tools[$tool_id]}" | tr -s " " "_"})
 ```
 Then it echos it (The item in the array with only its name):
 ```sh
-echo -e "\n----\n$( echo "${Tools[$tool_id]}" | awk -F '.' '{print $2}') :"
+echo -e "\n----\n$tool_function :"
 ```
 
 Finally it calls the function with the same name as the value of `$tool_function` with possible options:
@@ -143,7 +126,7 @@ Finally it exports the users input as a variable named based on what you provide
 Function:
 ```sh
 function get_input {
-	echo -e "${Tools[@]}\n$1\n$1"
+	echo -e "$(for ((i = 0; i < ${#Tools[@]}; i++)); do echo "$(( $i + 1)).${Tools[$i]}" | tr -s " " "_" && [ $(( $i + 1 )) != ${#Tools[@]} ] && echo "|"; done | xargs)\n$1\n$1"
 	[ -z $1 ] && read -p "- Which tool do you want to use? : " tool_id < /dev/tty || tool_id="$1"
 
 	while [ -z "$tool_id" ]; do
