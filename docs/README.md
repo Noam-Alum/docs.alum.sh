@@ -42,9 +42,6 @@ Documents on scripts and codes made by Noam (myself 😁)
 ## Other links:
 <div class="tag-container">
     <a href="https://alum.sh/" class="tag"><strong>Main site</strong></a>
-    <a href="https://alum.sh/assets/Blogs/view" class="tag"><strong>Blogs</strong></a>
-    <a href="https://alum.sh/assets/Cisco/view" class="tag"><strong>Cisco</strong></a>
-    <a href="https://alum.sh/assets/Linux/view" class="tag"><strong>Linux</strong></a>
-    <a href="https://alum.sh/assets/Hacking_shit/view" class="tag"><strong>Hacking shit</strong></a>
-    <a href="https://alum.sh/assets/Blogs/About%20me.html" class="tag"><strong>About me</strong></a>
+    <a href="https://www.linkedin.com/in/noam-alum/" class="tag"><strong>LinkedIn</strong></a>
+    <a href="https://github.com/Noam-Alum/" class="tag"><strong>GitHub</strong></a>
 </div>
