@@ -16,6 +16,13 @@ module.exports = {
     sidebar: [
      '/',
      {
+	  title: 'utils.sh',
+	  children: [
+            '/utils.sh/documentation.md',
+            'https://github.com/Noam-Alum/utils.sh'
+          ]
+     },
+     {
           title: 'Make backup',
           children: [
             '/Make-backup/introduction',
