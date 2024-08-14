@@ -133,9 +133,7 @@ h2 {
 }
 </style>
 <section class="features">
-
-## Features:
-
+   <h2>Features:</h2>
    <div class="scroll-container">
       <ul class="grid">
          <li class="card">
@@ -233,9 +231,7 @@ h2 {
    </div>
 </section>
 <section class="use-cases">
-
-## Use Cases:
-
+   <h2>Use Cases:</h2>
    <div class="scroll-container">
       <ul class="grid">
         <li class="card">
