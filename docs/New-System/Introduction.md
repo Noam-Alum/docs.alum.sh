@@ -9,6 +9,13 @@ It uses [YAML](https://en.wikipedia.org/wiki/YAML) for its configuration file, s
 
 <br><hr>
 
+<script>
+   document.querySelectorAll('.card').forEach(card=>{
+      card.addEventListener('click',()=>{
+         card.classList.toggle('active');
+      });
+   });
+</script>
 <style>
 body {
     font-family: Arial, sans-serif;
