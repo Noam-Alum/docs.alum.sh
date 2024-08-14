@@ -301,11 +301,11 @@ h2 {
    </div>
 </section>
 <script>
-   document.querySelectorAll('.card').forEach(card=>{
-      card.addEventListener('click',()=>{
-         card.classList.toggle('active');
-      });
+document.querySelectorAll('.card').forEach(card=>{
+   card.addEventListener('click',()=>{
+      card.classList.toggle('active');
    });
+});
 </script>
 
 ---
