@@ -301,7 +301,7 @@ h2 {
    </div>
 </section>
 
-<script src="/js/index.js"></script>
+<script src="/js/New-System-Introduction"></script>
 
 ---
 
