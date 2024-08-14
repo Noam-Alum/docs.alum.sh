@@ -22,9 +22,6 @@ jobs:
         with:
           # choose node.js version to use
           node-version: 9
-
-      - name: Install npms
-        run: npm install
           
       # run build script
       - name: Build VuePress site
