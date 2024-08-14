@@ -301,7 +301,13 @@ h2 {
    </div>
 </section>
 
-<script src="/js/New-System-Introduction"></script>
+<script>
+document.querySelectorAll('.card').forEach(function(card) {
+    card.addEventListener('click', function() {
+        card.classList.toggle('active');
+    });
+});
+</script>
 
 ---
 
