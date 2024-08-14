@@ -301,14 +301,6 @@ h2 {
    </div>
 </section>
 
-<script>
-document.querySelectorAll('.card').forEach(function(card) {
-    card.addEventListener('click', function() {
-        card.classList.toggle('active');
-    });
-});
-</script>
-
 ---
 
 **If you want to request a new feature, please create an issue [here](https://github.com/Noam-Alum/new-system/issues).**
