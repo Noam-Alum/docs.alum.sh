@@ -23,6 +23,18 @@ module.exports = {
           ]
      },
      {
+          title: 'New System',
+          children: [
+            '/New-System/Introduction',
+            {
+              title: 'Directives',
+              children: [
+                '/New-System/directives/SELinux'
+              ]
+            }
+          ]
+     },
+     {
           title: 'Make backup',
           children: [
             '/Make-backup/introduction',
