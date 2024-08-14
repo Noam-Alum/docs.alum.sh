@@ -300,13 +300,8 @@ h2 {
       </ul>
    </div>
 </section>
-<script>
-document.querySelectorAll('.card').forEach(card=>{
-   card.addEventListener('click',()=>{
-      card.classList.toggle('active');
-   });
-});
-</script>
+
+<script src="index.js"></script>
 
 ---
 
