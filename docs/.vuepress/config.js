@@ -23,7 +23,7 @@ module.exports = {
           ]
      },
      {
-          title: 'AutoPilot - I\'ts easy',
+          title: 'AutoPilot - I\'ts simple',
           children: [
             '/AutoPilot/Introduction',
             {
