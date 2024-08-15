@@ -1,11 +1,11 @@
-# New System - Introduction
+# AutoPilot | It's simple. - Introduction
 
-**[New System](https://github.com/Noam-Alum/new-system)** is a free to use [bash](https://en.wikipedia.org/wiki/Bash_(Unix_shell)) script written by [Noam Alum](https://github.com/Noam-Alum/), and [Shay Aviv](https://github.com/ShayAviv/) meant to automate the proccess of setting up a new system.<br>
+**[AutoPilot](https://github.com/Noam-Alum/AutoPilot)** is a free to use [bash](https://en.wikipedia.org/wiki/Bash_(Unix_shell)) script written by [Noam Alum](https://github.com/Noam-Alum/) meant to automate the proccess of setting up a new system.<br>
 It uses [YAML](https://en.wikipedia.org/wiki/YAML) for its configuration file, so it is very easy to setup, and you can create numerous configuration files for different occasions. (I like to call them *"Profiles"* 🙃)
 
-> We used [GitHub](https://github.com/) for version controle.
+> I used [GitHub](https://github.com/) for version controle.
 
-![NewSystemBanner](/images/New-System-Logo.png)
+![AutoPilotBanner](/images/AutoPilot-Logo.png)
 
 <br><hr>
 
@@ -141,91 +141,91 @@ h2 {
                <h3>Installed Packages</h3>
                <p>Define which packages to <br>install and their sources.</p>
             </div>
-            <img src="/images/New-System-Icons/downloads.png" alt="Installed Packages">
+            <img src="/images/AutoPilot-Icons/downloads.png" alt="Installed Packages">
          </li>
          <li class="card">
             <div class="content">
                <h3>Run Commands</h3>
                <p>Specify commands to be<br> executed during setup.</p>
             </div>
-            <img src="/images/New-System-Icons/command-line.png" alt="Run Commands">
+            <img src="/images/AutoPilot-Icons/command-line.png" alt="Run Commands">
          </li>
          <li class="card">
             <div class="content">
                <h3>Network Configuration</h3>
                <p>Configure network interfaces<br> and settings.</p>
             </div>
-            <img src="/images/New-System-Icons/Network.png" alt="Network Configuration">
+            <img src="/images/AutoPilot-Icons/Network.png" alt="Network Configuration">
          </li>
          <li class="card">
             <div class="content">
                <h3>Plugins</h3>
                <p>Include additional scripts or<br> tools to run as part of the setup.</p>
             </div>
-            <img src="/images/New-System-Icons/plug-in.png" alt="Plugins">
+            <img src="/images/AutoPilot-Icons/plug-in.png" alt="Plugins">
          </li>
          <li class="card">
             <div class="content">
                <h3>SELinux</h3>
                <p>Set SELinux status as required.</p>
             </div>
-            <img src="/images/New-System-Icons/SELinux.png" alt="SELinux">
+            <img src="/images/AutoPilot-Icons/SELinux.png" alt="SELinux">
          </li>
          <li class="card">
             <div class="content">
                <h3>Users</h3>
                <p>Add users, set passwords, and<br> assign sudo privileges.</p>
             </div>
-            <img src="/images/New-System-Icons/Users.png" alt="Users">
+            <img src="/images/AutoPilot-Icons/Users.png" alt="Users">
          </li>
          <li class="card">
             <div class="content">
                <h3>Environment Configuration</h3>
                <p>Customize environment<br> variables and configure shell<br> settings.</p>
             </div>
-            <img src="/images/New-System-Icons/env-development.png" alt="Environment Configuration">
+            <img src="/images/AutoPilot-Icons/env-development.png" alt="Environment Configuration">
          </li>
          <li class="card">
             <div class="content">
                <h3>CronTab</h3>
                <p>Customize user crontabs for<br> scheduled tasks.</p>
             </div>
-            <img src="/images/New-System-Icons/CronTab.png" alt="CronTab">
+            <img src="/images/AutoPilot-Icons/CronTab.png" alt="CronTab">
          </li>
          <li class="card">
             <div class="content">
                <h3>Profile</h3>
                <p>Set wallpaper, theme, and<br> system font. Install and<br> configure language packs for <br>multilingual support.</p>
             </div>
-            <img src="/images/New-System-Icons/Profile.png" alt="Profile">
+            <img src="/images/AutoPilot-Icons/Profile.png" alt="Profile">
          </li>
          <li class="card">
             <div class="content">
                <h3>Manage Startup Applications</h3>
                <p>Control applications that start<br> automatically on system boot.</p>
             </div>
-            <img src="/images/New-System-Icons/startup.png" alt="Manage Startup Applications">
+            <img src="/images/AutoPilot-Icons/startup.png" alt="Manage Startup Applications">
          </li>
          <li class="card">
             <div class="content">
                <h3>Power Management</h3>
                <p>Configure power settings<br> (e.g., sleep, hibernate).</p>
             </div>
-            <img src="/images/New-System-Icons/powerM.png" alt="Power Management">
+            <img src="/images/AutoPilot-Icons/powerM.png" alt="Power Management">
          </li>
          <li class="card">
             <div class="content">
                <h3>Disk Partitioning</h3>
                <p>Partition disks and manage<br> existing partitions using tools<br> like `fdisk` or `parted`. Offer<br> encryption options for partitions.</p>
             </div>
-            <img src="/images/New-System-Icons/disk.png" alt="Disk Partitioning">
+            <img src="/images/AutoPilot-Icons/disk.png" alt="Disk Partitioning">
          </li>
          <li class="card">
             <div class="content">
                <h3>SSH Key Management</h3>
                <p>Manage SSH keys for secure<br> authentication and remote<br> system access.</p>
             </div>
-            <img src="/images/New-System-Icons/ssh-key.png" alt="SSH Key Management">
+            <img src="/images/AutoPilot-Icons/ssh-key.png" alt="SSH Key Management">
          </li>
       </ul>
    </div>
@@ -237,65 +237,65 @@ h2 {
         <li class="card">
             <div class="content">
                 <h3>Educational Institutions</h3>
-                <p>Educational institutions can<br> leverage New System to<br> quickly deploy standardized <br>environments for students and<br> faculty.</p>
+                <p>Educational institutions can<br> leverage AutoPilot to<br> quickly deploy standardized <br>environments for students and<br> faculty.</p>
             </div>
-            <img src="/images/New-System-Icons/education.png" alt="Educational Institutions">
+            <img src="/images/AutoPilot-Icons/education.png" alt="Educational Institutions">
         </li>
         <li class="card">
             <div class="content">
                 <h3>Development Environments</h3>
                 <p>Developers can use New<br> System to configure their<br> development machines with<br> the necessary programming<br> languages, libraries, frameworks,<br> and tools.</p>
             </div>
-            <img src="/images/New-System-Icons/env-development.png" alt="Development Environments">
+            <img src="/images/AutoPilot-Icons/env-development.png" alt="Development Environments">
         </li>
         <li class="card">
             <div class="content">
                 <h3>Personal Use</h3>
-                <p>Individuals who frequently<br> set up new machines or<br> reinstall their operating<br> systems can benefit from<br> New System by automating<br> the setup process.</p>
+                <p>Individuals who frequently<br> set up new machines or<br> reinstall their operating<br> systems can benefit from<br> AutoPilot by automating<br> the setup process.</p>
             </div>
-            <img src="/images/New-System-Icons/personal-use.png" alt="Personal Use">
+            <img src="/images/AutoPilot-Icons/personal-use.png" alt="Personal Use">
         </li>
         <li class="card">
             <div class="content">
                 <h3>Testing and QA</h3>
-                <p>New System automates test<br> environment setup, providing<br> quality assurance teams<br> and testers with<br> consistent, repeatable<br> configurations and necessary<br> tools.</p>
+                <p>AutoPilot automates test<br> environment setup, providing<br> quality assurance teams<br> and testers with<br> consistent, repeatable<br> configurations and necessary<br> tools.</p>
             </div>
-            <img src="/images/New-System-Icons/testing.png" alt="Testing and QA">
+            <img src="/images/AutoPilot-Icons/testing.png" alt="Testing and QA">
         </li>
         <li class="card">
             <div class="content">
                 <h3>Temporary Setups</h3>
-                <p>For temporary or event-based<br> setups like trade shows<br> or conferences, New System<br> quickly prepares machines with<br> the required software and<br> settings, making deployment and<br> management easier for short<br> periods.</p>
+                <p>For temporary or event-based<br> setups like trade shows<br> or conferences, AutoPilot<br> quickly prepares machines with<br> the required software and<br> settings, making deployment and<br> management easier for short<br> periods.</p>
             </div>
-            <img src="/images/New-System-Icons/Temporary.png" alt="Temporary Setups">
+            <img src="/images/AutoPilot-Icons/Temporary.png" alt="Temporary Setups">
         </li>
         <li class="card">
             <div class="content">
                 <h3>Rescue and Recovery</h3>
-                <p>When a system needs<br> recovery or rebuilding after<br> a failure, New System<br> automates software reinstallation<br> and settings reconfiguration,<br> reducing the time to<br> restore it to its original<br> state.</p>
+                <p>When a system needs<br> recovery or rebuilding after<br> a failure, AutoPilot<br> automates software reinstallation<br> and settings reconfiguration,<br> reducing the time to<br> restore it to its original<br> state.</p>
             </div>
-            <img src="/images/New-System-Icons/disaster-recovery.png" alt="Rescue and Recovery">
+            <img src="/images/AutoPilot-Icons/disaster-recovery.png" alt="Rescue and Recovery">
         </li>
         <li class="card">
             <div class="content">
                 <h3>Company Deployment</h3>
-                <p>A company can use<br> New System to quickly<br> configure new machines,<br> ensuring consistent software<br> and settings. This includes<br> installing productivity tools,<br> setting up configurations,<br> and applying security policies.</p>
+                <p>A company can use<br> AutoPilot to quickly<br> configure new machines,<br> ensuring consistent software<br> and settings. This includes<br> installing productivity tools,<br> setting up configurations,<br> and applying security policies.</p>
             </div>
-            <img src="/images/New-System-Icons/Company.png" alt="Company Deployment">
+            <img src="/images/AutoPilot-Icons/Company.png" alt="Company Deployment">
         </li>
         <li class="card">
             <div class="content">
                 <h3>OS Migration</h3>
-                <p>When switching operating systems,<br> New System automates setup<br> of applications, configurations, and<br> settings, ensuring a smooth<br> transition and minimizing<br> manual reinstallation and<br> reconfiguration.</p>
+                <p>When switching operating systems,<br> AutoPilot automates setup<br> of applications, configurations, and<br> settings, ensuring a smooth<br> transition and minimizing<br> manual reinstallation and<br> reconfiguration.</p>
             </div>
-            <img src="/images/New-System-Icons/Migration.png" alt="OS Migration">
+            <img src="/images/AutoPilot-Icons/Migration.png" alt="OS Migration">
         </li>
         <li class="card">
             <div class="content">
                 <h3>System Formatting</h3>
-                <p>If you need to format<br> and reinstall your operating<br> system, New System handles<br> post-installation setup. It<br> automates software installation,<br> configuration, and personalization,<br> helping you get back<br> to work faster.</p>
+                <p>If you need to format<br> and reinstall your operating<br> system, AutoPilot handles<br> post-installation setup. It<br> automates software installation,<br> configuration, and personalization,<br> helping you get back<br> to work faster.</p>
             </div>
-            <img src="/images/New-System-Icons/Formatting.png" alt="System Formatting">
+            <img src="/images/AutoPilot-Icons/Formatting.png" alt="System Formatting">
         </li>
       </ul>
    </div>
@@ -303,4 +303,4 @@ h2 {
 
 ---
 
-**If you want to request a new feature, please create an issue [here](https://github.com/Noam-Alum/new-system/issues).**
+**If you want to request a new feature, please create an issue [here](https://github.com/Noam-Alum/AutoPilot/issues).**
