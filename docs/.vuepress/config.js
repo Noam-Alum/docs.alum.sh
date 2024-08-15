@@ -23,13 +23,13 @@ module.exports = {
           ]
      },
      {
-          title: 'New System',
+          title: 'AutoPilot - I\'ts easy',
           children: [
-            '/New-System/Introduction',
+            '/AutoPilot/Introduction',
             {
               title: 'Directives',
               children: [
-                '/New-System/directives/SELinux'
+                '/AutoPilot/directives/SELinux'
               ]
             }
           ]
