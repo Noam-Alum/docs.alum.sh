@@ -1,4 +1,4 @@
-# AutoPilot - Introduction
+# AutoPilot <img src="/images/AutoPilot-Icons/AutoPilot-icon-black.png" alt="AutoPilot icon" width="30" height="auto">  Introduction
 
 **[AutoPilot](https://github.com/Noam-Alum/AutoPilot)** is a free to use [bash](https://en.wikipedia.org/wiki/Bash_(Unix_shell)) script written by [Noam Alum](https://www.linkedin.com/in/noam-alum/) meant to automate the proccess of setting up a new system.<br>
 It uses [YAML](https://en.wikipedia.org/wiki/YAML) for its configuration file, so it is very easy to setup, and you can create numerous configuration files for different occasions. (I like to call them *"Profiles"* 🙃)
@@ -138,7 +138,9 @@ h2 {
 </style>
 
 <section class="features">
-   <h2>Features:</h2>
+
+## Features:
+
    <div class="scroll-container">
       <ul class="grid">
          <li class="card">
@@ -225,7 +227,9 @@ h2 {
    </div>
 </section>
 <section class="use-cases">
-   <h2>Use Cases:</h2>
+
+## Use Cases: 
+
    <div class="scroll-container">
       <ul class="grid">
         <li class="card">
