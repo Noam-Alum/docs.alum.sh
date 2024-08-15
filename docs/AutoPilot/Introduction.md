@@ -288,4 +288,6 @@ h2 {
 
 ---
 
+:::tip
 **If you want to request a new feature, please create an issue [here](https://github.com/Noam-Alum/AutoPilot/issues).**
+:::
