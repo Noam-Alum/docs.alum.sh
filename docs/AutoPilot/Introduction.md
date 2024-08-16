@@ -130,6 +130,76 @@ h2 {
     color: #2c3e50;
 }
 
+/* Container for the whole use-cases section */
+.use-cases {
+    background-color: #f1f7f7; /* Light cyan background */
+    padding: 20px;
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+}
+
+/* Styling the section header */
+.use-cases h2 {
+    color: #007a7a; /* Dark cyan text */
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Anchor link styling */
+.use-cases .header-anchor {
+    color: #00ced1; /* Cyan color for anchor */
+    text-decoration: none;
+    margin-right: 5px;
+}
+
+.use-cases .header-anchor:hover {
+    color: #007a7a; /* Darker cyan on hover */
+}
+
+/* Scroll container for the use cases cards */
+.use-cases .scroll-container {
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+/* Grid styling for the use cases cards */
+.use-cases .grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.use-cases .card {
+    background-color: white;
+    border: 1px solid #00ced1;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+}
+
+.use-cases .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Card content */
+.use-cases .content h3 {
+    color: #007a7a; /* Dark cyan text */
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.use-cases .content p {
+    color: #004d4d; /* Slightly darker cyan for paragraphs */
+    font-size: 16px;
+    line-height: 1.6;
+}
+
 @media (max-width: 600px) {
     .scroll-container {
         flex-direction: column;
@@ -295,3 +365,75 @@ h2 {
 :::tip
 **If you want to request a new feature, please create an issue [here](https://github.com/Noam-Alum/AutoPilot/issues).**
 :::
+
+<br><br>
+
+I've used [utils.sh](https://github.com/Noam-Alum/utils.sh) to ensure the quality of the script and YAML to make it easyer creating a configuration file, for refrence, heres an example configuration file:
+```yaml
+# AutoPilot - Example configuration file
+
+# SELinux status
+SELinux: Disabled
+
+# List of packages to be installed
+Installed_packages:
+  - name: FireJail
+    type: Deb
+    source: firejail
+  - name: Discord
+    type: Pkg
+    source: "https://discord.com/api/download?platform=linux&format=deb"
+  - name: NVIM
+    type: Sh
+    source: "https://docs.alum.sh/files/NVIM-install.sh"
+  - name: Chrome
+    type: Pkg
+    source: "https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb"
+  - name: git
+    type: Deb
+    source: git
+
+Network_Configuration:
+  - nic: tun0
+    ip: 192.168.2.14/24
+    gateway: 192.168.2.1
+    dns: 8.8.8.8,8.4.8.4
+  - nic: eth0
+    ip: "%DHCP%"
+    gateway: "%DHCP%"
+    dns: "%DHCP%"
+
+# Shell commands to run
+Run_Lines:
+  - echo "Hello"
+  - echo "Hello world"
+
+# List of plugins
+Plugins:
+  - name: FireJail
+    script: plugins/firejail
+  - name: make_backup
+    script: plugins/make_backup
+
+# User management
+Users:
+  - name: noam
+    pass: "%Gen%"
+    sudo: yes
+  - name: shay
+    pass: "mL{3_Ajx04,,,.......||||||//3QZ"
+    sudo: no
+
+# Network Configuration
+Network_Configuration:
+  - nic: tun0
+    ip: 192.168.2.14
+    gateway: 192.168.2.1
+    dns: 8.8.8.8,8.4.8.4
+  - nic: eth0
+    ip: "%DHCP%"
+    gateway: "%DHCP%"
+    dns: "%DHCP%"
+```
+
+Notice the readability and ease of use.
