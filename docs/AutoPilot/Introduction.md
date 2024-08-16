@@ -246,10 +246,12 @@ h2 {
             </a>
          </li>
          <li class="card">
+         <a href="/AutoPilot/directives/Users.html">
             <div class="content">
                <h3>Users</h3>
                <p>Add users, set passwords, and<br> assign sudo privileges.</p>
             </div>
+         </a>
          </li>
          <li class="card">
             <div class="content">

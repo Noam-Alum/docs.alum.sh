@@ -29,7 +29,8 @@ module.exports = {
             {
               title: 'Directives',
               children: [
-                '/AutoPilot/directives/SELinux'
+                '/AutoPilot/directives/SELinux',
+                '/AutoPilot/directives/Users'
               ]
             }
           ]

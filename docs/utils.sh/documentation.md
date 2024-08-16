@@ -1,6 +1,9 @@
 # Utils.sh
 
-A collection of functions to make scripting in bash easier.<br>
+A collection of functions to make scripting in bash easier.
+
+![utils logo](/images/utils-sh-logo.jpeg)
+
 You can place **uc_** variables in the head of your script to configure utils functions for your liking.
 
 | **uc_ variable** | **function** | **description**                       |
