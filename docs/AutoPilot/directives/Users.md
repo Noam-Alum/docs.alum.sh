@@ -1,6 +1,6 @@
 # <img src="/images/AutoPilot-Icons/Users.png" alt="Users image" width="28" height="auto"> Users
 
- Add users, set their passwords, and whether they have sudo privileges.
+Add users, set their passwords, and whether they have sudo privileges.
 
 <br>
 

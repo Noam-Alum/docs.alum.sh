@@ -30,7 +30,11 @@ module.exports = {
               title: 'Directives',
               children: [
                 '/AutoPilot/directives/SELinux',
-                '/AutoPilot/directives/Users'
+                '/AutoPilot/directives/Users',
+                '/AutoPilot/directives/Run_Lines',
+                '/AutoPilot/directives/Installed_packages',
+                '/AutoPilot/directives/Plugins',
+                '/AutoPilot/directives/Network_Configuration'
               ]
             }
           ]

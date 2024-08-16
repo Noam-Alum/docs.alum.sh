@@ -214,28 +214,36 @@ h2 {
    <div class="scroll-container">
       <ul class="grid">
          <li class="card">
+         <a href="/AutoPilot/directives/Installed_packages.html">
             <div class="content">
                <h3>Installed Packages</h3>
                <p>Define which packages to <br>install and their sources.</p>
             </div>
+         </a>
          </li>
          <li class="card">
+          <a href="/AutoPilot/directives/Run_Lines.html">
             <div class="content">
-               <h3>Run Commands</h3>
+               <h3>Run Lines</h3>
                <p>Specify commands to be<br> executed during setup.</p>
             </div>
+          </a>
          </li>
          <li class="card">
+            <a href="/AutoPilot/directives/Network_Configuration.html">
             <div class="content">
                <h3>Network Configuration</h3>
                <p>Configure network interfaces<br> and settings.</p>
             </div>
+            </a>
          </li>
          <li class="card">
+            <a href="/AutoPilot/directives/Plugins.html">
             <div class="content">
                <h3>Plugins</h3>
                <p>Include additional scripts or<br> tools to run as part of the setup.</p>
             </div>
+            </a>
          </li>
          <li class="card">
             <a href="/AutoPilot/directives/SELinux.html">
