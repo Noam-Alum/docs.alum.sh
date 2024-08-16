@@ -56,6 +56,6 @@ Environment_configuration:
 
 <br>
 
-:::warnin
+:::warning
 This directive is only meant for bash. (`.bashrc`)
 :::
