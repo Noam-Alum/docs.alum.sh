@@ -1,4 +1,3 @@
-
 module.exports = {
   title: 'ALUM.SH - docs',
   description: 'ALUM.SH Documents',
@@ -35,7 +34,7 @@ module.exports = {
                 '/AutoPilot/directives/Installed_packages',
                 '/AutoPilot/directives/Plugins',
                 '/AutoPilot/directives/Network_Configuration',
-                '/AutoPilot/directives/docs/AutoPilot/directives/Environment_configuration'
+                '/AutoPilot/directives/Environment_configuration'
               ]
             }
           ]
