@@ -298,6 +298,12 @@ h2 {
 </section>
 <section class="use-cases">
 
+:::tip
+**If you want to request a new feature, please create an issue [here](https://github.com/Noam-Alum/AutoPilot/issues).**
+:::
+
+<br>
+
 ## Use Cases: 
 
    <div class="scroll-container">
@@ -361,10 +367,6 @@ h2 {
 </section>
 
 ---
-
-:::tip
-**If you want to request a new feature, please create an issue [here](https://github.com/Noam-Alum/AutoPilot/issues).**
-:::
 
 <br><br>
 
