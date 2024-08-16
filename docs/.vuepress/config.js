@@ -34,7 +34,8 @@ module.exports = {
                 '/AutoPilot/directives/Run_Lines',
                 '/AutoPilot/directives/Installed_packages',
                 '/AutoPilot/directives/Plugins',
-                '/AutoPilot/directives/Network_Configuration'
+                '/AutoPilot/directives/Network_Configuration',
+                '/AutoPilot/directives/docs/AutoPilot/directives/Environment_configuration'
               ]
             }
           ]

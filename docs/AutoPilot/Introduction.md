@@ -263,9 +263,11 @@ h2 {
          </li>
          <li class="card">
             <div class="content">
+            <a href="/AutoPilot/directives/Environment_configuration.html"
                <h3>Environment Configuration</h3>
                <p>Customize environment<br> variables and configure shell<br> settings.</p>
             </div>
+            </a>
          </li>
          <li class="card">
             <div class="content">
