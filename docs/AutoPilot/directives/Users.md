@@ -26,8 +26,8 @@ Add users, set their passwords, and whether they have sudo privileges.
 ```yaml
 Users:
   - name: USERNAME
-  - pass: PASSWORD/%Gen%
-  - sudo: Yes/No
+    pass: PASSWORD/%Gen%
+    sudo: Yes/No
 ```
 
 </td>
@@ -36,11 +36,11 @@ Users:
 ```yaml
   Users:
     - name: Noam
-    - pass: 1234
-    - sudo: Yes
+      pass: 1234
+      sudo: Yes
     - name: Shay
-    - pass: %Gen%
-    - sudo: No
+      pass: %Gen%
+      sudo: No
 ```
 
 </td>

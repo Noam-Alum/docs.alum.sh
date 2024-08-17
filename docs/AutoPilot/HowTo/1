@@ -1,0 +1,84 @@
+# Create an AutoPilot configuration file
+
+**In this guide I'll show you how to create a propper `AutoPilot` configuration.**
+
+### Complexity level
+
+| ◈ | ◈ | ◈ | ◇ | ◇ | ◇ | ◇ | ◇ | ◇ | ◇ |
+|---|---|---|---|---|---|---|---|---|---|
+
+> Pretty simple 👌
+
+<br>
+
+<img src="/images/AutoPilot-HowTo.png" style="width: 900px;height: auto;">
+
+## Prerequisites
+
+- Fundamental understanding of [YAML](https://en.wikipedia.org/wiki/YAML).
+- [AutoPilot](https://github.com/Noam-Alum/AutoPilot/) installed.
+- (Optional for testing) Some form of VM setup.
+- Any method for editing text.
+
+## Identify your system needs
+
+From my experience, there are two ways you can conclude your system needs.
+
+* Firstly, if you plan to format your computer and want an easier way to return to your current setup (or close to it) or you want to prepare as a precaution an AutoPilot configuration file, you should take stock of everything you've customized, this includes any personalized settings, applications, or configurations you use daily—essentially, anything you've tailored to fit your specific needs.
+
+* Secondly, if you're looking for a fresh start and have a clear idea of what you want on your new system, or if you need to set up computers for your team (for example, specifying required software like Slack, AnyDesk, etc.).
+
+It's important to document all your requirements so we can apply them later.
+
+## Aligning directives with your requirements
+
+After you concludded your requirements, you can start to align them with directives.
+
+:::tip 
+Click [here](/AutoPilot/Introduction.html#features) for all directives, or alternatively click on the **Directives** section on the sidebar. (`AutoPilot - It's simple` --> `Directives`)
+:::
+
+#### For example:
+
+Lets say after a after assessing my needs I wrote the following requirements:
+
+```text
+# Noams requirements for a new system
+
+This is a list of all the requirements noam wants on a new system.
+
+- Discord installed
+- Google chrome installed
+- User named noam - make him sudoer
+- SELinux disabled # I dont have the power to configure it ;)
+- These aliases:
+   alias hosts='/usr/local/bin/scripts/./host.sh'
+   alias SRWP='/usr/local/bin/scripts/./SRWP.sh' 
+
+- This function in user noams bashrc:
+    function gc {
+	    Cf=$(grep -rl "$1" /home/noam/.cache/google-chrome/)
+    	if [ -n "$Cf" ]; then
+		    echo -e "Found google-chrome cache files:\n$Cf"
+	    else
+		    echo "No google-chrome cache files containing: $1"
+	    fi
+    }
+```
+
+We can clearly identify **four** directives that need to be used:
+
+| Directive | Requirements |
+|-----------|--------------|
+| [Installed_packages](/AutoPilot/directives/Installed_packages.html) | Install Discord and Google chrome |
+| [Users](/AutoPilot/directives/Users.html) | Create user noam as a sudoer |
+| [SELinux](/AutoPilot/directives/SELinux.html) | Disable SELinux |
+| [Environment_configuration](/AutoPilot/directives/Environment_configuration.html) | Add aliases and the gc function |
+
+---
+
+## Create the configuration
+
+Now that we have the information we need, we can start writing the configuration file.
+
+Lets to this step by step.

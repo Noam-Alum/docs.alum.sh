@@ -22,7 +22,7 @@ module.exports = {
           ]
      },
      {
-          title: 'AutoPilot - I\'ts simple',
+          title: 'AutoPilot - It\'s simple',
           children: [
             '/AutoPilot/Introduction',
             {
@@ -35,6 +35,12 @@ module.exports = {
                 '/AutoPilot/directives/Plugins',
                 '/AutoPilot/directives/Network_Configuration',
                 '/AutoPilot/directives/Environment_configuration'
+              ]
+            },
+            {
+              title: 'HowTo',
+              children: [
+                '/AutoPilot/HowTo/Create-a-configuration-file'
               ]
             }
           ]
