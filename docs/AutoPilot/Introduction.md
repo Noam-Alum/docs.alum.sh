@@ -433,10 +433,12 @@ Plugins:
 Users:
   - name: noam
     pass: "%Gen%"
-    sudo: yes
+    group: noam,sudo
+    shell: /bin/bash
   - name: shay
     pass: "mL{3_Ajx04,,,.......||||||//3QZ"
-    sudo: no
+    group: shay
+    shell: /bin/bash
 
 # Network Configuration
 Network_Configuration:
