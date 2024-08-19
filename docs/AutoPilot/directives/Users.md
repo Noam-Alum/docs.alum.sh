@@ -1,6 +1,6 @@
 # <img src="/images/AutoPilot-Icons/Users.png" alt="Users image" width="28" height="auto"> Users
 
-Add users, set their passwords, and whether they have sudo privileges.
+Add users, set their passwords, their groups and their shell.
 
 <br>
 
@@ -27,7 +27,8 @@ Add users, set their passwords, and whether they have sudo privileges.
 Users:
   - name: USERNAME
     pass: PASSWORD/%Gen%
-    sudo: Yes/No
+    group: GROUP1,GROUP2,GROUP3
+    shell: /path/to/shell
 ```
 
 </td>
@@ -37,10 +38,12 @@ Users:
   Users:
     - name: Noam
       pass: 1234
-      sudo: Yes
+      group: Noam,sudo,admins
+      shell: /bin/bash
     - name: Shay
       pass: %Gen%
-      sudo: No
+      group: Shay,helpdesk
+      shell: /bin/sh
 ```
 
 </td>
