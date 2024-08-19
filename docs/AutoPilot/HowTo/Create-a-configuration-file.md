@@ -145,7 +145,7 @@ Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint 
     Lets  implement this in YAML:
     ```yaml
     Environment_configuration:
-      - user: username
+      - user: noam
         config: |
           alias hosts='/usr/local/bin/scripts/./host.sh'
           alias SRWP='/usr/local/bin/scripts/./SRWP.sh'
@@ -180,7 +180,7 @@ Users:
     shell: /bin/bash
 SELinux: Disabled
 Environment_configuration:
-  - user: username
+  - user: noam
     config: |
       alias hosts='/usr/local/bin/scripts/./host.sh'
       alias SRWP='/usr/local/bin/scripts/./SRWP.sh'
