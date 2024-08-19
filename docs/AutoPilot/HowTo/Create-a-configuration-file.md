@@ -117,8 +117,9 @@ Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint 
     ```yaml
     Users:
       - name: noam
-        groups: sudo
         pass: "%Gen%"
+        group: noam,sudo
+        shell: /bin/bash
     ```
     > You can use `%Gen%` to tell AutoPilot to generate a strong password for you!
 3. **SELinux:**<br>
@@ -174,8 +175,9 @@ Installed_packages:
     source: "https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb"
 Users:
   - name: noam
-    groups: sudo
     pass: "%Gen%"
+    group: noam,sudo
+    shell: /bin/bash
 SELinux: Disabled
 Environment_configuration:
   - user: username
