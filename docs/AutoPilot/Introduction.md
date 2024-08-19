@@ -257,7 +257,7 @@ h2 {
          <a href="/AutoPilot/directives/Users.html">
             <div class="content">
                <h3>Users</h3>
-               <p>Add users, set passwords, and<br> assign sudo privileges.</p>
+               <p>Add users, set their<br> passwords, their groups<br> and their shell.</p>
             </div>
          </a>
          </li>
