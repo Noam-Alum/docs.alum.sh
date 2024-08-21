@@ -270,10 +270,12 @@ h2 {
             </a>
          </li>
          <li class="card">
+            <a href="/AutoPilot/directives/Cronjobs.html">
             <div class="content">
-               <h3>CronTab</h3>
+               <h3>Cronjobs</h3>
                <p>Customize user crontabs for<br> scheduled tasks.</p>
             </div>
+            </a>
          </li>
          <li class="card">
             <div class="content">
