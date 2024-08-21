@@ -17,8 +17,16 @@ module.exports = {
      {
 	  title: 'utils.sh',
 	  children: [
-            '/utils.sh/documentation.md',
-            'https://github.com/Noam-Alum/utils.sh'
+            '/utils.sh/Introduction.md',
+            {
+              title: 'Functions',
+              children: [
+                '/functions/xecho',
+                'functions/run',
+                'functions/ifcontinue',
+                'functions/gen_random'
+              ]
+            }
           ]
      },
      {
