@@ -158,7 +158,7 @@ h2 {
    <div class="scroll-container">
       <ul class="grid">
          <li class="card">
-         <a href="functions/xecho.md">
+         <a href="functions/xecho.html">
             <div class="content">
                <h3>xecho</h3>
                <p>Extended echo</p>
@@ -166,7 +166,7 @@ h2 {
          </a>
          </li>
          <li class="card">
-         <a href="functions/ifcontinue.md">
+         <a href="functions/ifcontinue.html">
             <div class="content">
                <h3>ifcontinue</h3>
                <p>Return binary response<br> to a yes-or-no<br> question.</p>
@@ -174,7 +174,7 @@ h2 {
          </a>
          </li>
          <li class="card">
-         <a href="functions/user_input.md">
+         <a href="functions/user_input.html">
             <div class="content">
                <h3>user_input</h3>
                <p>Take user input in<br> and save it as a<br> variable in the best<br> way posable.</p>
@@ -182,7 +182,7 @@ h2 {
          </a>
          </li>
          <li class="card">
-         <a href="functions/gen_random.md">
+         <a href="functions/gen_random.html">
             <div class="content">
                <h3>gen_random</h3>
                <p>Generate random data.</p>
@@ -190,7 +190,7 @@ h2 {
          </a>
          </li>
          <li class="card">
-         <a href="functions/run.md">
+         <a href="functions/run.html">
             <div class="content">
                <h3>run</h3>
                <p>run commands in<br> an informative way</p>
