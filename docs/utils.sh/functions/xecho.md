@@ -7,44 +7,44 @@ offering a variety of shortcodes for easy integration into your text.
 | ShortCode            | Result                          |
 | -------------------- | ------------------------------- |
 | **Blocks:**          |                                 |
-| `{{ ERROR }}`          | [ERROR]  (text in red)          |
-| `{{ GOOD }}`           | [GOOD] (text in green)          |
-| `{{ INFO }}`           | [INFO] (text in grey)           |
-| `{{ WARNING }}`        | [WARNING] (text in yellow)      |
-| `{{ ALERT }}`          | [ALERT] (text in orange)        |
-| `{{ NOTE }}`           | [NOTE] (text in blue)           |
-| `{{ IMPORTANT }}`      | [IMPORTANT] (text in bold)      |
-| `{{ SUCCESS }}`        | [SUCCESS] (text in light green) |
+| \{\{ ERROR \}\}          | [ERROR]  (text in red)          |
+| \{\{ GOOD \}\}           | [GOOD] (text in green)          |
+| \{\{ INFO \}\}           | [INFO] (text in grey)           |
+| \{\{ WARNING \}\}        | [WARNING] (text in yellow)      |
+| \{\{ ALERT \}\}          | [ALERT] (text in orange)        |
+| \{\{ NOTE \}\}           | [NOTE] (text in blue)           |
+| \{\{ IMPORTANT \}\}      | [IMPORTANT] (text in bold)      |
+| \{\{ SUCCESS \}\}        | [SUCCESS] (text in light green) |
 | **Faces:**           |                                 |
-| `{{ E-shocked }}`      | `⊙▂⊙`                           |
-| `{{ E-smile }}`        | `ʘ‿ʘ`                           |
-| `{{ E-angry }}`        | `ಠ_ರೃ`                          |
-| `{{ E-sad }}`          | `◕︵◕`                          |
-| `{{ E-nervous }}`      | `⊙﹏⊙`                          |
+| \{\{ E-shocked \}\}      | `⊙▂⊙`                           |
+| \{\{ E-smile \}\}        | `ʘ‿ʘ`                           |
+| \{\{ E-angry \}\}        | `ಠ_ರೃ`                          |
+| \{\{ E-sad \}\}          | `◕︵◕`                          |
+| \{\{ E-nervous \}\}      | `⊙﹏⊙`                          |
 | **Other:**           |                                 |
-| `{{ E-gun }}`          | ▄︻̷̿┻̿═━一                        |
-| `{{ E-heart }}`        | ❤                               |
-| `{{ E-star }}`         | ✮                               |
-| `{{ E-music }}`        | ♫                               |
-| `{{ E-moon }}`         | ☾                               |
-| `{{ E-cloud }}`        | ☁︎                               |
-| `{{ E-arrowright }}`   | ➜                               |
-| `{{ E-arrowleft }}`    | ←                               |
-| `{{ E-redo }}`         | ↺                               |
-| `{{ E-sleep }}`        | ᶻz                              |
-| `{{ E-success }}`      | ✔                               |
-| `{{ E-fail }}`         | ✘                               |
+| \{\{ E-gun \}\}          | ▄︻̷̿┻̿═━一                        |
+| \{\{ E-heart \}\}        | ❤                               |
+| \{\{ E-star \}\}         | ✮                               |
+| \{\{ E-music \}\}        | ♫                               |
+| \{\{ E-moon \}\}         | ☾                               |
+| \{\{ E-cloud \}\}        | ☁︎                               |
+| \{\{ E-arrowright \}\}   | ➜                               |
+| \{\{ E-arrowleft \}\}    | ←                               |
+| \{\{ E-redo \}\}         | ↺                               |
+| \{\{ E-sleep \}\}        | ᶻz                              |
+| \{\{ E-success \}\}      | ✔                               |
+| \{\{ E-fail \}\}         | ✘                               |
 | **Page breaks:**     |                                 |
-| `{{ BR-scissors }}`    | -ˋˏ✄┈┈┈┈                         |
-| `{{ BR-star }}`        | ────⋆⋅☆⋅⋆────                   |
-| `{{ BR-specialdots }}` | ✦•┈๑⋅⋯ ⋯⋅๑┈•✦                   |
-| `{{ BR-heart }}`       | ﮩ٨ـﮩﮩ٨ـ♡ﮩ٨ـﮩﮩ٨ـ                 |
-| `{{ BR-bear }}`        | ━━━━━━ʕ•㉨•ʔ━━━━━━━             |
-| `{{ BR-music }}`       | 01:43 ━━━━●───── 03:50          |
+| \{\{ BR-scissors \}\}    | -ˋˏ✄┈┈┈┈                         |
+| \{\{ BR-star \}\}        | ────⋆⋅☆⋅⋆────                   |
+| \{\{ BR-specialdots \}\} | ✦•┈๑⋅⋯ ⋯⋅๑┈•✦                   |
+| \{\{ BR-heart \}\}       | ﮩ٨ـﮩﮩ٨ـ♡ﮩ٨ـﮩﮩ٨ـ                 |
+| \{\{ BR-bear \}\}        | ━━━━━━ʕ•㉨•ʔ━━━━━━━             |
+| \{\{ BR-music \}\}       | 01:43 ━━━━●───── 03:50          |
 | **Text bullets:**    |                                 |
-| `{{ B-dot }}`          | •                               |
-| `{{ B-arrow }}`        | ➣                               |
-| `{{ B-dimond }}`       | ◈                               |
+| \{\{ B-dot \}\}          | •                               |
+| \{\{ B-arrow \}\}        | ➣                               |
+| \{\{ B-dimond \}\}       | ◈                               |
 
 ### Tags:
 | Color                                 | Tag        | Example                 |

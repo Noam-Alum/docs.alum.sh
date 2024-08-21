@@ -17,7 +17,7 @@ module.exports = {
      {
 	  title: 'utils.sh',
 	  children: [
-            '/utils.sh/Introduction.md',
+            '/utils.sh/Introduction',
             {
               title: 'Functions',
               children: [
