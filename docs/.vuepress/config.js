@@ -51,6 +51,12 @@ module.exports = {
               children: [
                 '/AutoPilot/HowTo/Create-a-configuration-file'
               ]
+            },
+            {
+              title: 'Contribute',
+              children: [
+                '/AutoPilot/contribute/QA'
+              ]
             }
           ]
      },
