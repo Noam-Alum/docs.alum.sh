@@ -1,6 +1,6 @@
 # Utils.sh
 
-`utils.sh` is a collection of functions to make scripting in bash easier.
+[utils.sh](https://github.com/Noam-Alum/utils.sh) is a collection of functions to make scripting in bash easier.
 
 ![utils logo](/images/utils-sh-logo.jpeg)
 
