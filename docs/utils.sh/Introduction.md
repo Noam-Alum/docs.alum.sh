@@ -1,4 +1,27 @@
-# ALUM.SH - docs
+# Utils.sh
+
+`utils.sh` is a collection of functions to make scripting in bash easier.
+
+![utils logo](/images/utils-sh-logo.jpeg)
+
+You can place **uc_** variables in the head of your script to configure utils functions for your liking.
+
+| **uc_ variable** | **function** | **description**                       |
+|------------------|--------------|---------------------------------------|
+| uc_ifc_posfix    | ifcontinue   | Change default posfix (*[yes/no]*).   |
+| uc_gr_len        | gen_random   | Change default length (*12*).         |
+| uc_rn_err_msg    | run          | Change the structure of the error msg.|
+| uc_rn_inf_msg    | run          | Change the structure of the info msg. | 
+
+> Each function description includes its **uc_** variables with examples.
+
+If a uc_ variable has dynamically changing parts, you'd have to use **placeholders**, placeholders are
+called using {[ name ]}:
+
+| **placeholder**  | **function** | **description**                                              |
+|------------------|--------------|--------------------------------------------------------------|
+| {[ rn_cmd ]}     | run          | The command executed by the run function.                    |
+| {[ rn_err ]}     | run          | The error returned after executing a given command with run. |
 
 <style>
 body {
@@ -128,35 +151,49 @@ h2 {
 }
 </style>
 
-Documents on scripts and codes made by Noam (myself 😁)
-
 <section class="features">
 
-## Other links:
+## Available functions:
 
    <div class="scroll-container">
       <ul class="grid">
          <li class="card">
-         <a href="https://thelazyadmin.blog">
+         <a href="functions/xecho.md">
             <div class="content">
-               <h3>The Lazy Admin Blog</h3>
-               <p>Linux automation, scripts<br> and howto's</p>
+               <h3>xecho</h3>
+               <p>Extended echo</p>
             </div>
          </a>
          </li>
          <li class="card">
-         <a href="https://www.linkedin.com/in/noam-alum">
+         <a href="functions/ifcontinue.md">
             <div class="content">
-               <h3>LinkedIn</h3>
-               <p>System Administrator/Head<br> of automation team at<br> JetServer | Member of<br> the AlmaLinux foundations</p>
+               <h3>ifcontinue</h3>
+               <p>Return binary response<br> to a yes-or-no<br> question.</p>
             </div>
          </a>
          </li>
          <li class="card">
-         <a href="https://github.com/Noam-Alum/">
+         <a href="functions/user_input.md">
             <div class="content">
-               <h3>GitHub</h3>
-               <p>"Where there is a shell,<br> There is a way"</p>
+               <h3>user_input</h3>
+               <p>Take user input in<br> and save it as a<br> variable in the best<br> way posable.</p>
+            </div>
+         </a>
+         </li>
+         <li class="card">
+         <a href="functions/gen_random.md">
+            <div class="content">
+               <h3>gen_random</h3>
+               <p>Generate random data.</p>
+            </div>
+         </a>
+         </li>
+         <li class="card">
+         <a href="functions/run.md">
+            <div class="content">
+               <h3>run</h3>
+               <p>run commands in<br> an informative way</p>
             </div>
          </a>
          </li>
