@@ -42,7 +42,8 @@ module.exports = {
                 '/AutoPilot/directives/Installed_packages',
                 '/AutoPilot/directives/Plugins',
                 '/AutoPilot/directives/Network_Configuration',
-                '/AutoPilot/directives/Environment_configuration'
+                '/AutoPilot/directives/Environment_configuration',
+                '/AutoPilot/directives/Cronjobs'
               ]
             },
             {

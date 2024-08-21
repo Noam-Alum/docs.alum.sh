@@ -24,7 +24,7 @@ Set cronjobs for a user.
 <td>
 
 ```yaml
-Cron:
+Cronjobs:
   - user: username
     rules: |
       * * * * * cmd1
@@ -36,7 +36,7 @@ Cron:
 <td>
 
 ```yaml
-Cron:
+Cronjobs:
   - user: noam
     rules: |
       * * * * * echo "$(date)" >> /home/noam-cron.txt
