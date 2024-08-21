@@ -7,44 +7,44 @@ offering a variety of shortcodes for easy integration into your text.
 | ShortCode            | Result                          |
 | -------------------- | ------------------------------- |
 | **Blocks:**          |                                 |
-| <code>{{ ERROR }}</code>          | [ERROR]  (text in red)          |
-| <code>{{ GOOD }}</code>           | [GOOD] (text in green)          |
-| <code>{{ INFO }}</code>           | [INFO] (text in grey)           |
-| <code>{{ WARNING }}</code>        | [WARNING] (text in yellow)      |
-| <code>{{ ALERT }}</code>          | [ALERT] (text in orange)        |
-| <code>{{ NOTE }}</code>           | [NOTE] (text in blue)           |
-| <code>{{ IMPORTANT }}</code>      | [IMPORTANT] (text in bold)      |
-| <code>{{ SUCCESS }}</code>        | [SUCCESS] (text in light green) |
+| &#123;&#123; ERROR &#125;&#125;          | [ERROR]  (text in red)          |
+| &#123;&#123; GOOD &#125;&#125;           | [GOOD] (text in green)          |
+| &#123;&#123; INFO &#125;&#125;           | [INFO] (text in grey)           |
+| &#123;&#123; WARNING &#125;&#125;        | [WARNING] (text in yellow)      |
+| &#123;&#123; ALERT &#125;&#125;          | [ALERT] (text in orange)        |
+| &#123;&#123; NOTE &#125;&#125;           | [NOTE] (text in blue)           |
+| &#123;&#123; IMPORTANT &#125;&#125;      | [IMPORTANT] (text in bold)      |
+| &#123;&#123; SUCCESS &#125;&#125;        | [SUCCESS] (text in light green) |
 | **Faces:**           |                                 |
-| <code>{{ E-shocked }}</code>      | `⊙▂⊙`                           |
-| <code>{{ E-smile }}</code>        | `ʘ‿ʘ`                           |
-| <code>{{ E-angry }}</code>        | `ಠ_ರೃ`                          |
-| <code>{{ E-sad }}</code>          | `◕︵◕`                          |
-| <code>{{ E-nervous }}</code>      | `⊙﹏⊙`                          |
+| &#123;&#123; E-shocked &#125;&#125;      | `⊙▂⊙`                           |
+| &#123;&#123; E-smile &#125;&#125;        | `ʘ‿ʘ`                           |
+| &#123;&#123; E-angry &#125;&#125;        | `ಠ_ರೃ`                          |
+| &#123;&#123; E-sad &#125;&#125;          | `◕︵◕`                          |
+| &#123;&#123; E-nervous &#125;&#125;      | `⊙﹏⊙`                          |
 | **Other:**           |                                 |
-| <code>{{ E-gun }}</code>          | ▄︻̷̿┻̿═━一                        |
-| <code>{{ E-heart }}</code>        | ❤                               |
-| <code>{{ E-star }}</code>         | ✮                               |
-| <code>{{ E-music }}</code>        | ♫                               |
-| <code>{{ E-moon }}</code>         | ☾                               |
-| <code>{{ E-cloud }}</code>        | ☁︎                               |
-| <code>{{ E-arrowright }}</code>   | ➜                               |
-| <code>{{ E-arrowleft }}</code>    | ←                               |
-| <code>{{ E-redo }}</code>         | ↺                               |
-| <code>{{ E-sleep }}</code>        | ᶻz                              |
-| <code>{{ E-success }}</code>      | ✔                               |
-| <code>{{ E-fail }}</code>         | ✘                               |
+| &#123;&#123; E-gun &#125;&#125;          | ▄︻̷̿┻̿═━一                        |
+| &#123;&#123; E-heart &#125;&#125;        | ❤                               |
+| &#123;&#123; E-star &#125;&#125;         | ✮                               |
+| &#123;&#123; E-music &#125;&#125;        | ♫                               |
+| &#123;&#123; E-moon &#125;&#125;         | ☾                               |
+| &#123;&#123; E-cloud &#125;&#125;        | ☁︎                               |
+| &#123;&#123; E-arrowright &#125;&#125;   | ➜                               |
+| &#123;&#123; E-arrowleft &#125;&#125;    | ←                               |
+| &#123;&#123; E-redo &#125;&#125;         | ↺                               |
+| &#123;&#123; E-sleep &#125;&#125;        | ᶻz                              |
+| &#123;&#123; E-success &#125;&#125;      | ✔                               |
+| &#123;&#123; E-fail &#125;&#125;         | ✘                               |
 | **Page breaks:**     |                                 |
-| <code>{{ BR-scissors }}</code>    | -ˋˏ✄┈┈┈┈                         |
-| <code>{{ BR-star }}</code>        | ────⋆⋅☆⋅⋆────                   |
-| <code>{{ BR-specialdots }}</code> | ✦•┈๑⋅⋯ ⋯⋅๑┈•✦                   |
-| <code>{{ BR-heart }}</code>       | ﮩ٨ـﮩﮩ٨ـ♡ﮩ٨ـﮩﮩ٨ـ                 |
-| <code>{{ BR-bear }}</code>        | ━━━━━━ʕ•㉨•ʔ━━━━━━━             |
-| <code>{{ BR-music }}</code>       | 01:43 ━━━━●───── 03:50          |
+| &#123;&#123; BR-scissors &#125;&#125;    | -ˋˏ✄┈┈┈┈                         |
+| &#123;&#123; BR-star &#125;&#125;        | ────⋆⋅☆⋅⋆────                   |
+| &#123;&#123; BR-specialdots &#125;&#125; | ✦•┈๑⋅⋯ ⋯⋅๑┈•✦                   |
+| &#123;&#123; BR-heart &#125;&#125;       | ﮩ٨ـﮩﮩ٨ـ♡ﮩ٨ـﮩﮩ٨ـ                 |
+| &#123;&#123; BR-bear &#125;&#125;        | ━━━━━━ʕ•㉨•ʔ━━━━━━━             |
+| &#123;&#123; BR-music &#125;&#125;       | 01:43 ━━━━●───── 03:50          |
 | **Text bullets:**    |                                 |
-| <code>{{ B-dot }}</code>          | •                               |
-| <code>{{ B-arrow }}</code>        | ➣                               |
-| <code>{{ B-dimond }}</code>       | ◈                               |
+| &#123;&#123; B-dot &#125;&#125;          | •                               |
+| &#123;&#123; B-arrow &#125;&#125;        | ➣                               |
+| &#123;&#123; B-dimond &#125;&#125;       | ◈                               |
 
 ### Tags:
 | Color                                 | Tag        | Example                 |
