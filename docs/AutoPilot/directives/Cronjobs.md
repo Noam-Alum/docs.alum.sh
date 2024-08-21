@@ -53,6 +53,6 @@ Cronjobs:
 
 <br>
 
-:::warning NOTE
-This directive would append the new rules to the users crontab.
+:::tip NOTE
+This directive would **append** the new rules to the users crontab.
 :::
