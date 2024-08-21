@@ -46,4 +46,4 @@ Then you can write an issue [here](https://github.com/Noam-Alum/AutoPilot/issues
 
 <br>
 
-**Huge thank you for anyone willing to contribute!**
+**Huge thank you to anyone willing to contribute! 🙏**
