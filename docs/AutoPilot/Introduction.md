@@ -382,7 +382,7 @@ h2 {
 
 ---
 
-<br><br>
+<br>
 
 I've used [utils.sh](https://github.com/Noam-Alum/utils.sh) to ensure the quality of the script and YAML to make it easyer creating a configuration file, for refrence, heres an example configuration file:
 ```yaml
@@ -455,3 +455,8 @@ Network_Configuration:
 ```
 
 Notice the readability and ease of use.
+
+---
+
+**How can you contribute?**
+- [As a *QA* tester](/AutoPilot/contribute/QA.html)

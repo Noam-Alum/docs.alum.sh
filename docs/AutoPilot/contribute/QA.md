@@ -38,6 +38,8 @@ After you successfuly found an issue/bug, you should collect the following infor
 
 > If you'r nice you could try to supply a fix to the bug/issue 😁
 
+<br>
+
 Then you can write an issue [here](https://github.com/Noam-Alum/AutoPilot/issues/new?assignees=Noam-Alum&labels=QA&projects=&template=qa-.md&title=QA+%7C+%5BShort+issue+description%5D).
 
 ---
