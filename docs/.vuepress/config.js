@@ -21,10 +21,10 @@ module.exports = {
             {
               title: 'Functions',
               children: [
-                '/functions/xecho',
-                'functions/run',
-                'functions/ifcontinue',
-                'functions/gen_random'
+                '/utils.sh/functions/xecho',
+                '/utils.sh/functions/run',
+                '/utils.sh/functions/ifcontinue',
+                '/utils.sh/functions/gen_random'
               ]
             }
           ]
