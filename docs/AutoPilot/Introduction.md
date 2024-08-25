@@ -285,12 +285,6 @@ h2 {
          </li>
          <li class="card">
             <div class="content">
-               <h3>Manage Startup Applications</h3>
-               <p>Control applications that start<br> automatically on system boot.</p>
-            </div>
-         </li>
-         <li class="card">
-            <div class="content">
                <h3>Power Management</h3>
                <p>Configure power settings<br> (e.g., sleep, hibernate).</p>
             </div>
