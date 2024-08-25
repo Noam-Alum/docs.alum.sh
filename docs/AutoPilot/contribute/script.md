@@ -202,6 +202,18 @@ done
 Naming a function like a directive in the configuration file (With the `rn_` prefix) only calls the function, to also retrieve any data from the directive use the `parse_yaml` function.
 :::
 
+## Test changes
+
+Test the newly added changes by running the script either on your personal computer (if applicable) or a virtual machine.
+
+It's highly recommended to use some form of VM setup, to not harm your personal environment.
+
+:::tip
+I would suggest using [Vagrant](https://www.vagrantup.com/), as it enables the creation of lightweight, reproducible, and portable development environments.
+:::
+
+Using a VM also enables me as the developer a way to recreate the exact circomstances you had while encountering an issue/bug, so you could ask for a helping hand :grin:.
+
 ## Send a PR
 
 After making changes to the AutoPilot script, push to your AutoPilot fork then send a PR with detailed explenation of the changes you've made or any other valuable information, for example:
