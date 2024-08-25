@@ -56,7 +56,8 @@ module.exports = {
               title: 'Contribute',
               children: [
                 '/AutoPilot/contribute/QA',
-                '/AutoPilot/contribute/docs'
+                '/AutoPilot/contribute/docs',
+                '/AutoPilot/contribute/script'
               ]
             }
           ]
