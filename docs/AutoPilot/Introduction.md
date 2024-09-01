@@ -293,30 +293,6 @@ h2 {
             </div>
             </a>
          </li> 
-         <li class="card">
-            <div class="content">
-               <h3>Profile</h3>
-               <p>Set wallpaper, theme, and<br> system font. Install and<br> configure language packs for <br>multilingual support.</p>
-            </div>
-         </li>
-         <li class="card">
-            <div class="content">
-               <h3>Power Management</h3>
-               <p>Configure power settings<br> (e.g., sleep, hibernate).</p>
-            </div>
-         </li>
-         <li class="card">
-            <div class="content">
-               <h3>Disk Partitioning</h3>
-               <p>Partition disks and manage<br> existing partitions using tools<br> like `fdisk` or `parted`. Offer<br> encryption options for partitions.</p>
-            </div>
-         </li>
-         <li class="card">
-            <div class="content">
-               <h3>SSH Key Management</h3>
-               <p>Manage SSH keys for secure<br> authentication and remote<br> system access.</p>
-            </div>
-         </li>
       </ul>
    </div>
 </section>
