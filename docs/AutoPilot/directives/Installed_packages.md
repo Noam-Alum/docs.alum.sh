@@ -26,8 +26,8 @@ Which packages to install and how.
 ```yaml
 Installed_packages:
   - name: AnyName
-    type: Deb/Pkg/Sh
-    source: Deb name/Package url/Script url
+    type: Pm/Pkg/Sh
+    source: Package name/Package url/Script url
 ```
 
 </td>
@@ -36,7 +36,7 @@ Installed_packages:
 ```yaml
 Installed_packages:
   - name: FireJail
-    type: Deb
+    type: Pm
     source: firejail
   - name: Discord
     type: Pkg
