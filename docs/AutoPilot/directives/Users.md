@@ -26,7 +26,7 @@ Add users, set their passwords, their groups and their shell.
 ```yaml
 Users:
   - name: USERNAME
-    pass: PASSWORD/%Gen%
+    pass: PASSWORD/"%Gen%"
     group: GROUP1,GROUP2,GROUP3
     shell: /path/to/shell
 ```
@@ -35,13 +35,13 @@ Users:
 <td>
 
 ```yaml
-  Users:
+Users:
     - name: Noam
       pass: 1234
       group: Noam,sudo,admins
       shell: /bin/bash
     - name: Shay
-      pass: %Gen%
+      pass: "%Gen%"
       group: Shay,helpdesk
       shell: /bin/sh
 ```

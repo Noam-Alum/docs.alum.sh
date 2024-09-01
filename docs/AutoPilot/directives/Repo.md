@@ -37,7 +37,7 @@ Repo:
 Repo:
   - name: spotify
     configuration: "deb http://repository.spotify.com  stable  non-free"
-    key: "https://download.spotify.com/debian/pubkey_6224F9941A8AA6D1.gp"
+    key: "https://download.spotify.com/debian/pubkey_6224F9941A8AA6D1.gpg"
   - name: Google
     configuration: "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main"
     key: "%NoKey%"
