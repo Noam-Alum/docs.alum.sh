@@ -180,12 +180,17 @@ In general AutoPilot uses [utils.sh](https://github.com/Noam-Alum/utils.sh) heav
 
 Now that you know the basic functions needed to add/change something in AutoPilot, you need to understand the stracture of AutoPilot.
 
-Since AutoPilot revolves around directives each directive has its own function with the same name, but with a prefix of `rn_`, for example:
+Since AutoPilot revolves around directives each directive has its own function with the same name, but with a prefix of `rn_` (`rn_el` for RHEL version of a function), for example:
 ```yaml
 SomeDirective: Yes
 ```
 ```bash
+## SomeDirective
 function rn_SomeDirective {
+    parse_yaml 0 SomeDirective
+    xecho "$info_prefix <biw>Called SomeDirective, $SomeDirective. {{ E-smile }}</biw>"
+}
+function rn_el_SomeDirective {
     parse_yaml 0 SomeDirective
     xecho "$info_prefix <biw>Called SomeDirective, $SomeDirective. {{ E-smile }}</biw>"
 }
@@ -195,7 +200,13 @@ That is so it can be called when it is mentioned in the configuration file via t
 ## Execute functions
 for key in "${keys[@]}"
 do
-  rn_$key
+  if [[ ! "$key" =~ ^("Running_OS")$ ]]; then
+    if [ "$Running_OS" == "Debian" ]; then
+      rn_$key
+    else
+      rn_el_$key
+    fi
+  fi
 done
 ```
 :::tip
