@@ -24,7 +24,8 @@ module.exports = {
                 '/utils.sh/functions/xecho',
                 '/utils.sh/functions/run',
                 '/utils.sh/functions/ifcontinue',
-                '/utils.sh/functions/gen_random'
+                '/utils.sh/functions/gen_random',
+                'utils.sh/functions/user_input'
               ]
             }
           ]
@@ -43,7 +44,8 @@ module.exports = {
                 '/AutoPilot/directives/Plugins',
                 '/AutoPilot/directives/Network_Configuration',
                 '/AutoPilot/directives/Environment_configuration',
-                '/AutoPilot/directives/Cronjobs'
+                '/AutoPilot/directives/Cronjobs',
+                '/AutoPilot/directives/Repo'
               ]
             },
             {

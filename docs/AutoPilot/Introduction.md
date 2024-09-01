@@ -278,6 +278,14 @@ h2 {
             </a>
          </li>
          <li class="card">
+            <a href="/AutoPilot/directives/Repo.html">
+            <div class="content">
+               <h3>Repo</h3>
+               <p>Add new repositories to<br> sources list.</p>
+            </div>
+            </a>
+         </li>
+         <li class="card">
             <div class="content">
                <h3>Profile</h3>
                <p>Set wallpaper, theme, and<br> system font. Install and<br> configure language packs for <br>multilingual support.</p>
