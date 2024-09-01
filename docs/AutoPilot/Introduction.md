@@ -286,6 +286,14 @@ h2 {
             </a>
          </li>
          <li class="card">
+            <a href="/AutoPilot/directives/Time.html">
+            <div class="content">
+               <h3>Time</h3>
+               <p>Change system time.</p>
+            </div>
+            </a>
+         </li> 
+         <li class="card">
             <div class="content">
                <h3>Profile</h3>
                <p>Set wallpaper, theme, and<br> system font. Install and<br> configure language packs for <br>multilingual support.</p>

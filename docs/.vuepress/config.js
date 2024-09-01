@@ -45,7 +45,8 @@ module.exports = {
                 '/AutoPilot/directives/Network_Configuration',
                 '/AutoPilot/directives/Environment_configuration',
                 '/AutoPilot/directives/Cronjobs',
-                '/AutoPilot/directives/Repo'
+                '/AutoPilot/directives/Repo',
+                '/AutoPilot/directives/Time'
               ]
             },
             {
